@@ -23,7 +23,7 @@ body {
 /* Header */
 
 .header {
-    background-image: url('/backgroundImage1.jpg');
+    background-image: url('/assets/backgroundImage1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
