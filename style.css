@@ -328,8 +328,8 @@ h2 {
         position: fixed;
         right: 0;
         bottom: 0;
-        height: 90vh;
-        width: 80%;
+        height: 100vh;
+        width: 60%;
 /*         max-height: 70rem; */
         flex-direction: column;
         align-items: center;
@@ -345,8 +345,8 @@ h2 {
         position: fixed;
         right: 0;
         bottom: 0;
-        height: 90vh;
-        width: 80%;
+        height: 100vh;
+        width: 60%;
 /*         max-height: 70rem; */
         flex-direction: column;
         align-items: center;
