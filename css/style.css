@@ -329,6 +329,7 @@ h2 {
     .navBtnContainer {
         background-color: rgba(4, 55, 99, 0.87);
         position: fixed;
+        top: 0;
         right: 0;
         bottom: 0;
         height: 100vh;
@@ -346,6 +347,7 @@ h2 {
     .navBtnContainer.sticky {
         background-color: rgb(3, 38, 62);
         position: fixed;
+        top: 0;
         right: 0;
         bottom: 0;
         height: 100vh;
