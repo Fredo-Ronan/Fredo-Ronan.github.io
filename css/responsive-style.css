@@ -26,6 +26,10 @@
         overflow-y: hidden;
     }
 
+    .backgroundImageWrapper {
+        background-image: url('/assets/backgroundImage1.jpg');
+    }
+
     .textLogo {
         font-size: 1rem;
     }
