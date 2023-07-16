@@ -96,6 +96,10 @@
         color: white;
     }
 
+    .content {
+        position: relative;
+    }
+
     .ganjil-content {
         font-size: 18px;
     }
