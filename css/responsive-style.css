@@ -30,6 +30,10 @@
         background-image: url('/assets/backgroundImage1.jpg');
     } */
 
+    .header {
+        height: 100vh;
+    }
+
     .textLogo {
         font-size: 1rem;
     }
