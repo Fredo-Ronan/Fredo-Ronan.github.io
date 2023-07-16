@@ -94,8 +94,8 @@
     .greetings {
         background-color: rgba(255, 255, 255, 0.512);
         padding-left: 3rem;
-/*         padding-top: calc(50vh - 4.75rem); */
-/*         padding-bottom: calc(50vh - 4.75rem); */
+        padding-top: calc(50vh - 4.75rem);
+        padding-bottom: 28.5vh;
         font-size: 1rem;
         color: white;
     }
