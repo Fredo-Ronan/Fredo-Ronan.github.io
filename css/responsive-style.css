@@ -54,7 +54,7 @@
         position: fixed;
         right: 0;
         bottom: 0;
-        height: 100vh;
+        height: 91vh;
         width: 60%;
         /* max-height: 70rem; */
         flex-direction: column;
@@ -71,7 +71,7 @@
         position: fixed;
         right: 0;
         bottom: 0;
-        height: 100vh;
+        height: 82vh;
         width: 60%;
         /* max-height: 70rem; */
         flex-direction: column;
@@ -87,11 +87,17 @@
         opacity: 1;
     }
 
+    .scrollCommand p {
+        padding-top: 12.5vh;
+        margin-right: 3rem;
+        flex-direction: column;
+    }
+
     .greetings {
         background-color: rgba(0, 0, 0, 0.512);
         padding-left: 3rem;
         padding-top: calc(50vh - 4.75rem);
-        padding-bottom: 28.5vh;
+        padding-bottom: 9.5vh;
         font-size: 1rem;
         color: white;
     }
@@ -102,10 +108,12 @@
 
     .ganjil-content {
         font-size: 18px;
+        padding: 5rem;
     }
 
     .genap-content {
         font-size: 18px;
+        padding: 5rem;
     }
 
     .footer {
