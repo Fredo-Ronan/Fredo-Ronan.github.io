@@ -22,6 +22,7 @@ window.addEventListener('scroll', function(){
     }
 })
 
+
 window.addEventListener('onload', function(){
     if(this.window.scrollY != 0){
         navbarSlideContainer.classList.add('sticky');
@@ -29,68 +30,10 @@ window.addEventListener('onload', function(){
 })
 
 
-//handle logo text on navbar left side onload animation
-const textLogo = new SplitType('#logo'); // splitType class is from the CDN javascript library
+// to handle the responsive side to change the profile picture to the more smaller size in order to fit to the mobile phone screen
+const responsiveImage = document.querySelector('.profilePictureResponsive');
 
-const logoCharacters = document.querySelectorAll('.char');
-
-for(let i = 0; i<logoCharacters.length; i++){
-    logoCharacters[i].classList.add('translate-y-full'); // adding translate-y-full class from tailwind css framework javascript library
+// check if the device screen width is less than 400 than it assume that the user is opening this website on mobile phone/smartphone
+if(this.window.innerWidth < 400){
+  responsiveImage.classList.toggle('active');
 }
-
-// use from CDN javascript library
-gsap.to('.char', {
-    y: 0,
-    stagger: 0.05,
-    delay: 0.05,
-    duration: 1
-});
-
-
-// handle dynamic typing effect introducing words on greetings side of the HTML with class identifier : .introducingWords
-var words = ['An Informatics Engineering Student', 'Tech Enthusiast', 'I like software developing', 'I also like Music, Photography and Videography', 'Always learn new thing'],
-    part,
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 15,
-    speed = 70;
-var wordflick = function () {
-  setInterval(function () {
-    if (forwards) {
-      if (offset >= words[i].length) {
-        ++skip_count;
-        if (skip_count == skip_delay) {
-          forwards = false;
-          skip_count = 0;
-        }
-      }
-    }
-    else {
-      if (offset == 0) {
-        forwards = true;
-        i++;
-        offset = 0;
-        if (i >= len) {
-          i = 0;
-        }
-      }
-    }
-    part = words[i].substr(0, offset);
-    if (skip_count == 0) {
-      if (forwards) {
-        offset++;
-      }
-      else {
-        offset--;
-      }
-    }
-    $('.introducingWords').text(part);
-  },speed);
-};
-
-$(document).ready(function () {
-  wordflick();
-});
