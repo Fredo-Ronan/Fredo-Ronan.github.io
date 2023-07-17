@@ -34,6 +34,6 @@ window.addEventListener('onload', function(){
 const responsiveImage = document.querySelector('.profilePictureResponsive');
 
 // check if the device screen width is less than 400 than it assume that the user is opening this website on mobile phone/smartphone
-if(this.window.innerWidth < 400){
+if(this.window.innerWidth < 800){
   responsiveImage.classList.toggle('active');
 }
