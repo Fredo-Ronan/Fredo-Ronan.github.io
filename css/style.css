@@ -37,13 +37,6 @@ body {
 
 /* Header */
 
-.header {
-    /* background-image: url('/assets/backgroundImage1.jpg'); */
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-size: 160%; */
-}
-
 .backgroundImageWrapper {
     background-image: url('/assets/backgroundImage3.png');
     background-attachment: fixed;
@@ -158,16 +151,6 @@ body {
     gap: 3px;
     padding-top: 25vh;
 }
-
-/* .scrollCommand p span {
-    animation: jump 1s ease-in-out infinite;
-    animation-delay: calc(0.1 * var(--i));
-    animation-play-state: paused;
-}
-
-.scrollCommand p:hover span {
-    animation-play-state: running;
-} */
 
 .downArrow {
     width: 5%;
