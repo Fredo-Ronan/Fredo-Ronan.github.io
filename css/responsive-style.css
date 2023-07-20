@@ -166,13 +166,31 @@
     .introduce {
         flex-direction: column;
         padding: 2rem;
+        gap: 2rem;
     }
 
     .introduce img {
         width: 100%;
     }
 
+    .introduce img.show {
+        transform: translateX(0);
+    }
+
     .introduce p {
         font-size: 12px;
+    }
+
+    .introduceText {
+        transform: translateY(20%);
+    }
+
+    .introduceText.show {
+        transform: translateY(0);
+    }
+
+    .commingsoon {
+        padding: 5rem;
+        font-size: 15px;
     }
 }

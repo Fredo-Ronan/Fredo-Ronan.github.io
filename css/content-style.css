@@ -83,6 +83,11 @@ h2 {
     width: 40%;
     border: 7px solid var(--profile-picture-border-color);
     box-shadow: 12px 14px 32px 4px rgba(0, 0, 0, 0.252);
+    transform: translateX(-100%);
+}
+
+.introduce img.show {
+    transform: translateX(0);
 }
 
 .introduce h3 {
@@ -96,4 +101,18 @@ h2 {
 
 .introduceText {
     max-width: 719px;
+    transform: translateX(100%);
+}
+
+.introduceText.show {
+    transform: translateX(0);
+}
+
+.commingsoon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20rem;
+    font-size: 25px;
+    color: var(--main-text-color);
 }

@@ -28,3 +28,19 @@ gsap.to('.char', {
     delay: 0.05,
     duration: 1
 });
+
+
+//handle observer to make object reveal on scroll animation
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry   => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+    })
+}, {
+    threshold: .1
+});
+
+let introduceImage = document.querySelector('.introduce img');
+let introduceText = document.querySelector('.introduceText');
+
+observer.observe(introduceImage);
+observer.observe(introduceText);
