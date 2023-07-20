@@ -1,5 +1,5 @@
 
-
+//handle hamburger menu and responsive navbar
 let checkboxHamburger = document.querySelector('input[name=hamburgerCheckbox]');
 let firstSpan = document.querySelector('.floating-hamburger-btn .hamburgerBtn .hamburger span:nth-child(1)');
 let secondSpan = document.querySelector('.floating-hamburger-btn .hamburgerBtn .hamburger span:nth-child(2)');

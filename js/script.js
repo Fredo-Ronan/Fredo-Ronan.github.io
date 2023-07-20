@@ -16,9 +16,7 @@ let topValue = window.getComputedStyle(hamburgerBtn).top.replace('px','');
 
 window.addEventListener('scroll', function(){
   let value = this.window.scrollY;
-
-  console.log(value);
-
+  
   hamburgerBtn.style.top = parseInt(topValue) + parseInt(value) + 60 + 'px';
 
   if(value == 0){
@@ -27,9 +25,13 @@ window.addEventListener('scroll', function(){
 });
 
 let navUl = document.querySelector('header nav ul');
+let li = document.querySelectorAll('header nav ul li');
 
 hamburgerBtn.addEventListener('click', () => {
   navUl.classList.toggle('open');
+  li.forEach(link => {
+    link.classList.toggle('float');
+  })
 })
 
 
