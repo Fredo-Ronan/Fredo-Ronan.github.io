@@ -93,3 +93,7 @@ h2 {
     font-size: 18px;
     margin-top: 10px;
 }
+
+.introduceText {
+    max-width: 719px;
+}
