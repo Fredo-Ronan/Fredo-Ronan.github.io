@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Montserrat:wght@400;600&family=Schoolbell&family=Seaweed+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+*,html {
+    padding: 0;
+    margin: 0;
+
+    transition: 1s;
+}
+
+body {
+
+    overflow-x: hidden;
+
+    /* color variables */
+    --section-ganjil-color: #F0F0F0;
+    --section-genap-color: #fff;
+    --main-text-color: black;
+    --main-fredo-name-color: #0038FF;
+    --navbar-color: white;
+    --navbar-hover-background-color: black;
+    --navbar-hover-text-color: white;
+    --profile-picture-border-color: white;
+    --hamburger-color: black;
+    --hamburger-btn-color: white;
+    --scroll-down-color: rgba(0, 0, 0, 0.575);
+    --down-arrow-color: black;
+
+    /* font variables */
+    --logo-font: 'Seaweed Script', cursive;
+    --navbar-btn-font: 'Schoolbell', cursive;
+    --greeting-header-font: 'Fredoka', sans-serif;
+    --introduce-font: 'Montserrat', sans-serif;
+    
+    /* dimension and measurement variables */
+    --padding-top-navbar: 18px;
+    --padding-bottom-navbar: 18px;
+
+    /* animation side */
+}
+
+body.dark {
+    /* color variables */
+    --section-ganjil-color: #001731;
+    --section-genap-color: #001C3E;
+    --main-text-color: white;
+    --main-fredo-name-color: #0038FF;
+    --navbar-color: #001C3E;
+    --navbar-hover-background-color: rgb(0, 191, 255);
+    --navbar-hover-text-color: rgb(0, 0, 0);
+    --profile-picture-border-color: #003473;
+    --hamburger-color: rgb(232, 232, 232);
+    --hamburger-btn-color: #002450;
+    --scroll-down-color: rgba(255, 255, 255, 0.575);
+    --down-arrow-color: rgb(255, 255, 255);
+}
+
+/* header side */
+header nav {
+    background-color: var(--navbar-color);
+    padding-top: var(--padding-top-navbar);
+    padding-bottom: var(--padding-bottom-navbar);
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header nav .logoText {
+    font-size: 30px;
+    font-family: var(--logo-font);
+    color: var(--main-text-color);
+}
+
+header nav ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-family: var(--navbar-btn-font);
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover {
+    color: var(--navbar-hover-text-color);
+    padding: 10px;
+    background-color: var(--navbar-hover-background-color);
+}
+
+.floating-hamburger-btn {
+    display: none;
+}

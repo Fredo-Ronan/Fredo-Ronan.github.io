@@ -1,0 +1,95 @@
+
+/* HANDLE CONTENT SIDE */
+
+.scrollCommand {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: var(--scroll-down-color);
+    display: flex;
+    justify-content: center;
+}
+
+.scrollCommand p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    padding-top: 25vh;
+}
+
+.scrollCommand p .downArrow {
+    fill: var(--down-arrow-color);
+    animation: bounceArrow 1s ease-in-out infinite;
+}
+
+h2 {
+    display: inline;
+}
+
+.ganjil-section.first {
+    background-color: var(--section-ganjil-color);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.ganjil-section {
+    background-color: var(--section-ganjil-color);
+    position: relative;
+    width: 100%;
+}
+
+.genap-section {
+    background-color: var(--section-genap-color);
+    width: 100%;
+}
+
+.genap-section.full-screen {
+    background-color: var(--section-genap-color);
+    width: 100%;
+    height: 100vh;
+}
+
+.greeting {
+    position: relative;
+    padding-top: 25%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-family: var(--greeting-header-font);
+    font-size: 45px;
+    color: var(--main-text-color);
+}
+
+.greeting .words {
+    color: var(--main-text-color);
+    font-size: 22px;
+    opacity: 0.7;
+    min-height: 2.5rem;
+}
+
+.greeting h2:nth-child(2) {
+    color: var(--main-fredo-name-color);
+}
+
+.introduce {
+    padding: 5rem;
+    display: flex;
+    gap: 4rem;
+    font-family: var(--introduce-font);
+    color: var(--main-text-color);
+}
+
+.introduce img {
+    width: 40%;
+    border: 7px solid var(--profile-picture-border-color);
+    box-shadow: 12px 14px 32px 4px rgba(0, 0, 0, 0.252);
+}
+
+.introduce h3 {
+    font-size: 30px;
+}
+
+.introduce p {
+    font-size: 18px;
+    margin-top: 10px;
+}

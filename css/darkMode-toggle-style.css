@@ -1,0 +1,68 @@
+
+/* DARK MODE TOGGLE STYLING */
+
+header nav input {
+    display: none;
+}
+
+header nav .toggle-dark-mode {
+    width: 70px;
+    height: 30px;
+    position: relative;
+    display: block;
+    background-color: rgb(227, 227, 227);
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(155, 155, 155, 0.4);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.toggle-dark-mode::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    /* background: linear-gradient(180deg, rgb(255, 255, 255),rgb(143, 143, 143)); */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(240, 240, 240, 0.204);
+    transition: 0.5s;
+}
+
+header nav input:checked + .toggle-dark-mode {
+    background: rgb(1, 50, 94);
+}
+
+header nav input:checked + .toggle-dark-mode::after {
+    left: 55px;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, rgb(0, 95, 150),rgb(0, 43, 68));
+}
+
+header nav .toggle-dark-mode svg {
+    position: absolute;
+    width: 22px;
+    top: -385px;
+    z-index: 7;
+}
+
+header nav .toggle-dark-mode svg.sun {
+    left: 4px;
+    animation: rotate 6s ease-in-out infinite;
+}
+
+header nav .toggle-dark-mode svg.moon {
+    left: 44px;
+}
+
+header nav .toggle-dark-mode svg.sun.hide {
+    opacity: 0;
+    transform: scale(0);
+}
+
+header nav label svg.moon.hide {
+    opacity: 0;
+    transform: scale(0);
+}

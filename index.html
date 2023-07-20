@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/content-style.css">
+    <link rel="stylesheet" href="css/darkMode-toggle-style.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+
+    <title>Test Portfolio Website</title>
+</head>
+<body>
+    <!-- header side -->
+    <header>
+        <nav>
+            <div class="logoText" id="logoText" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);">Fredo Ronan</div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="darkModeToggle">
+                <input type="checkbox" id="toggle-dark">
+                <label for="toggle-dark" class="toggle-dark-mode">
+                    <svg width="800px" class="sun" height="800px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M861 656.7l144.6-144.6L861 367.6V163.1H656.6L512 18.6 367.4 163.1H163v204.5L18.4 512.1 163 656.7v204.4h204.4L512 1005.7l144.6-144.6H861z" fill="#FCD170" /><path d="M512 1015.7c-2.6 0-5.1-1-7.1-2.9L363.3 871.1H163c-5.5 0-10-4.5-10-10V660.8L11.4 519.2c-1.9-1.9-2.9-4.4-2.9-7.1 0-2.7 1.1-5.2 2.9-7.1L153 363.4V163.1c0-5.5 4.5-10 10-10h200.3L504.9 11.5c1.9-1.9 4.4-2.9 7.1-2.9s5.2 1.1 7.1 2.9l141.6 141.6H861c5.5 0 10 4.5 10 10v200.3L1012.6 505c1.9 1.9 2.9 4.4 2.9 7.1 0 2.7-1.1 5.2-2.9 7.1L871 660.8v200.3c0 5.5-4.5 10-10 10H660.7l-141.6 141.6c-2 2-4.5 3-7.1 3zM173 851.1h194.4c2.7 0 5.2 1.1 7.1 2.9L512 991.6l137.5-137.5c1.9-1.9 4.4-2.9 7.1-2.9H851V656.7c0-2.7 1.1-5.2 2.9-7.1l137.5-137.5-137.5-137.5c-1.9-1.9-2.9-4.4-2.9-7.1V173.1H656.6c-2.7 0-5.2-1.1-7.1-2.9L512 32.7 374.5 170.2c-1.9 1.9-4.4 2.9-7.1 2.9H173v194.4c0 2.7-1.1 5.2-2.9 7.1L32.6 512.1l137.5 137.5c1.9 1.9 2.9 4.4 2.9 7.1v194.4z" fill="" /><path d="M512 512.1m-257.8 0a257.8 257.8 0 1 0 515.6 0 257.8 257.8 0 1 0-515.6 0Z" fill="#F7DDAD" /><path d="M512 779.9c-71.5 0-138.8-27.9-189.4-78.4-50.6-50.6-78.4-117.8-78.4-189.4s27.9-138.8 78.4-189.4c50.6-50.6 117.8-78.4 189.4-78.4 71.5 0 138.8 27.9 189.4 78.4 50.6 50.6 78.4 117.8 78.4 189.4S752 650.9 701.4 701.5 583.5 779.9 512 779.9z m0-515.6c-66.2 0-128.4 25.8-175.2 72.6-46.8 46.8-72.6 109-72.6 175.2s25.8 128.4 72.6 175.2c46.8 46.8 109 72.6 175.2 72.6 66.2 0 128.4-25.8 175.2-72.6 46.8-46.8 72.6-109 72.6-175.2S734 383.7 687.2 336.9c-46.8-46.8-109-72.6-175.2-72.6z" fill="" /></svg>
+
+                    <svg width="800px" class="moon hide" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.9001 2.30719C19.7392 1.8976 19.1616 1.8976 19.0007 2.30719L18.5703 3.40247C18.5212 3.52752 18.4226 3.62651 18.298 3.67583L17.2067 4.1078C16.7986 4.26934 16.7986 4.849 17.2067 5.01054L18.298 5.44252C18.4226 5.49184 18.5212 5.59082 18.5703 5.71587L19.0007 6.81115C19.1616 7.22074 19.7392 7.22074 19.9001 6.81116L20.3305 5.71587C20.3796 5.59082 20.4782 5.49184 20.6028 5.44252L21.6941 5.01054C22.1022 4.849 22.1022 4.26934 21.6941 4.1078L20.6028 3.67583C20.4782 3.62651 20.3796 3.52752 20.3305 3.40247L19.9001 2.30719Z" fill="#FFFFFF"/>
+                        <path d="M16.0328 8.12967C15.8718 7.72009 15.2943 7.72009 15.1333 8.12967L14.9764 8.52902C14.9273 8.65407 14.8287 8.75305 14.7041 8.80237L14.3062 8.95987C13.8981 9.12141 13.8981 9.70107 14.3062 9.86261L14.7041 10.0201C14.8287 10.0694 14.9273 10.1684 14.9764 10.2935L15.1333 10.6928C15.2943 11.1024 15.8718 11.1024 16.0328 10.6928L16.1897 10.2935C16.2388 10.1684 16.3374 10.0694 16.462 10.0201L16.8599 9.86261C17.268 9.70107 17.268 9.12141 16.8599 8.95987L16.462 8.80237C16.3374 8.75305 16.2388 8.65407 16.1897 8.52902L16.0328 8.12967Z" fill="#FFFFFF"/>
+                        <path opacity="1" d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#FFFFFF"/>
+                        </svg>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <!-- end of header side -->
+
+    <!-- hamburger menu side -->
+    <div class="floating-hamburger-btn">
+        <input type="checkbox" id="checkHamburger" name="hamburgerCheckbox">
+        <label for="checkHamburger" class="hamburgerBtn" id="floating-hamburger">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </label>
+    </div>
+    <!-- end of hamburger menu side -->
+
+    <!-- contents side -->
+    <div class="ganjil-section first">
+        <div class="greeting">
+            <h2>Hi, i'm </h2>
+            <h2>Fredo</h2>
+            <div class="words"></div>
+        </div>
+
+        <!-- scroll down command side -->
+        <div class="scrollCommand">
+            <p>
+                Scroll down
+                <svg class="downArrow" fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 512.04 512.04" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M508.933,146.807l-42.347-42.347c-4.267-4.053-10.88-4.053-15.147,0L256.027,300.193L60.507,104.46
+                                c-4.267-4.053-10.88-4.053-15.147,0L3.12,146.807c-4.16,4.16-4.16,10.88,0,15.04L248.453,407.5c4.16,4.16,10.88,4.16,15.04,0
+                                l245.333-245.653C513.093,157.687,513.093,150.967,508.933,146.807z M256.027,384.887L25.733,154.38l27.2-27.307l195.52,195.733
+                                c4.267,4.053,10.88,4.053,15.147,0l195.52-195.733l27.2,27.307L256.027,384.887z"/>
+                        </g>
+                    </g>
+                </svg>
+            </p>
+        </div>
+        <!-- end of scroll down command side -->
+    </div>
+
+    <div class="genap-section">
+        <div class="introduce">
+            <img src="assets/fotoProfilResponsive.jpg" alt="" class="profile-picture">
+
+            <div class="introduceText">
+                <h3>Fredo Ronan</h3>
+                <p>
+                    An informatics Engineering Student at Atma Jaya Yogyakarta University currently on 2nd year.
+                    My full name is Boniface Fredo Ronan Antolino. I Was born in Yogyakarta 6 Juli 2003.<br><br>
+                    I like to develop responsive website, web app, desktop app, and some basic console application 
+                    in purpose to make other programmers or developers more easy to get their project done or simply 
+                    to get the visualization of some algorithm.<br><br>
+                    I also have interest to hacking things like reverse engineering a software, look deep into the 
+                    particular operating system in order to get to know what can i do with operating system API and 
+                    some network hacking.<br><br>
+                    Not only that, i also have some hobby like Making Music, Photography and Videography during my spare time to get out 
+                    temporary from my main interest as i mentioned before.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- end of contents -->
+
+    <!-- footer side -->
+    <div class="footer"></div>
+    <!-- end of footer side -->
+
+    <!-- CDN javascript library import -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- end of CDN javascript library import -->
+
+
+    <script src="js/script.js"></script>
+    <script src="js/UIScript.js"></script>
+</body>
+</html>
