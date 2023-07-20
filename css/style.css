@@ -25,6 +25,8 @@ body {
     --hamburger-btn-color: white;
     --scroll-down-color: rgba(0, 0, 0, 0.575);
     --down-arrow-color: black;
+    --responsive-navbar-base-color: black;
+    --responsive-navbar-text-color: white;
 
     /* font variables */
     --logo-font: 'Seaweed Script', cursive;
@@ -53,6 +55,8 @@ body.dark {
     --hamburger-btn-color: #002450;
     --scroll-down-color: rgba(255, 255, 255, 0.575);
     --down-arrow-color: rgb(255, 255, 255);
+    --responsive-navbar-base-color: linear-gradient(180deg, #025EB3 0%, #001C3E 100%);
+    --responsive-navbar-text-color: rgb(255, 255, 255);
 }
 
 /* header side */
