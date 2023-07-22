@@ -1,3 +1,5 @@
+
+// working with dark mode toggle
 let darkModeCheck = document.getElementById('toggle-dark');
 let sunSVG = document.querySelector('.sun');
 let moonSVG = document.querySelector('.moon');
@@ -9,7 +11,7 @@ darkModeCheck.addEventListener('click', function(){
     body.classList.toggle('dark');
 });
 
-
+// working with hamburger menu animation
 let hamburgerBtn = document.getElementById('floating-hamburger');
 let hamburgerBtnValue = document.querySelector('.hamburgerBtn');
 let topValue = window.getComputedStyle(hamburgerBtn).top.replace('px','');
@@ -32,53 +34,22 @@ hamburgerBtn.addEventListener('click', () => {
   li.forEach(link => {
     link.classList.toggle('float');
   })
-})
-
-
-// handle dynamic typing effect introducing words on greetings side of the HTML with class identifier : .introducingWords
-var words = ['An Informatics Engineering Student', 'Tech Enthusiast', 'I like software developing', 'I also like Music, Photography and Videography', 'Always learn new thing'],
-    part,
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 15,
-    speed = 70;
-var wordflick = function () {
-  setInterval(function () {
-    if (forwards) {
-      if (offset >= words[i].length) {
-        ++skip_count;
-        if (skip_count == skip_delay) {
-          forwards = false;
-          skip_count = 0;
-        }
-      }
-    }
-    else {
-      if (offset == 0) {
-        forwards = true;
-        i++;
-        offset = 0;
-        if (i >= len) {
-          i = 0;
-        }
-      }
-    }
-    part = words[i].substr(0, offset);
-    if (skip_count == 0) {
-      if (forwards) {
-        offset++;
-      }
-      else {
-        offset--;
-      }
-    }
-    $('.words').text(part);
-  },speed);
-};
-
-$(document).ready(function () {
-  wordflick();
 });
+
+
+// working with social media links from svg
+let githubLink = document.querySelector('.github-logo');
+let linkedinLink = document.querySelector('.linkedin-logo');
+let instagramLink = document.querySelector('.instagram-logo');
+
+githubLink.addEventListener('click', () => {
+  window.open('https://github.com/Fredo-Ronan');
+});
+
+linkedinLink.addEventListener('click', () => {
+  window.open('https://www.linkedin.com/in/fredo-ronan-135844212/');
+});
+
+instagramLink.addEventListener('click', () => {
+  window.open('https://www.instagram.com/fredoronan/');
+})

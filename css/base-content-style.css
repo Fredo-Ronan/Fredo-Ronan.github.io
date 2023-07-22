@@ -1,0 +1,83 @@
+
+/* HANDLE THE BASE CONTENT STYLING */
+
+/* section handler styling */
+.ganjil-section {
+    background-color: var(--section-ganjil-color);
+    position: relative;
+    width: 100%;
+}
+
+.ganjil-section.first {
+    background-color: var(--section-ganjil-color);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.genap-section {
+    background-color: var(--section-genap-color);
+    width: 100%;
+}
+
+.genap-section.full-screen {
+    background-color: var(--section-genap-color);
+    width: 100%;
+    height: 100vh;
+}
+/* end of section handler styling */
+
+
+/* introducing side */
+.introduce {
+    padding: 5rem;
+    display: flex;
+    gap: 4rem;
+    font-family: var(--introduce-font);
+    color: var(--main-text-color);
+}
+
+.introduce h3 {
+    font-size: 30px;
+}
+
+.introduce p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+/* end of introducing side */
+
+
+/* read more button base styling */
+.read-more-btn-link {
+    padding: 10px;
+    background-color: var(--read-more-btn-color);
+    color: var(--read-more-text-color);
+    -webkit-clip-path: polygon(0 0, 81% 1%, 81% 100%, 0% 100%);
+    clip-path: polygon(0 0, 81% 1%, 81% 100%, 0% 100%);
+    border: 2px solid var(--read-more-btn-color);
+}
+
+.read-more-btn-link:hover {
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+    background-color: var(--read-more-btn-hover-color);
+    color: var(--read-more-text-hover-color);
+}
+/* end of read more button base styling */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Comming soon placeholder side */
+/* 
+    NOTE:
+    use this class to the h3 html component to make the 'comming soon' content placeholder working
+ */
+ .commingsoon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20rem;
+    font-size: 25px;
+    color: var(--main-text-color);
+}
+/* end of comming soon placeholder side */

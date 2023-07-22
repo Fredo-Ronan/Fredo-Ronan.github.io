@@ -56,7 +56,9 @@ const observerTechLogos = new IntersectionObserver(entries => {
 });
 
 let techStackTitle = document.querySelector('.tech-stack-section .title');
+let hoverPrompt = document.querySelector('.tech-stack-section .hover-prompt');
 let techLogos = document.querySelectorAll('.tech-stack-logos svg');
 
 observer.observe(techStackTitle);
+observer.observe(hoverPrompt);
 techLogos.forEach(element => observerTechLogos.observe(element));

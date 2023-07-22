@@ -2,7 +2,7 @@
 /* HANDLE RESPONSIVE SIDE */
 
 /* ukuran tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     header nav ul {
         width: 60%;
     }
@@ -77,7 +77,7 @@
         padding-bottom: 0.2rem;
     }
 
-    header nav ul li a.active {
+    header nav ul li .navbar-links.active {
         color: var(--responsive-navbar-active-text-color);
         padding: 10px;
         background-color: var(--responsive-navbar-active-background-color);
@@ -198,16 +198,11 @@
     .introduceText.show {
         transform: translateY(0);
     }
-    /* end of introducing content side */
 
-
-    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-    /* Comming soon placeholder side */
-    .commingsoon {
-        padding: 5rem;
-        font-size: 15px;
+    .link-sosmed svg {
+        width: 12%;
     }
-    /* end of Comming soon placeholder side */
+    /* end of introducing content side */
 
 
     /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -219,7 +214,7 @@
 
 
     /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-    /* second content side */
+    /* second content OR tech stack side */
     .tech-stack-section {
         padding-left: 1px;
         padding-right: 1px;
@@ -240,4 +235,29 @@
         width: 20%;
         margin-bottom: 10px;
     }
+
+    .tech-stack-logos svg.slideIn {
+        opacity: 1;
+    }
+
+    .tech-stack-section .hover-prompt {
+        display: none;
+    }
+    /* end of second content OR tech stack side */
+
+    /* BASIC UTILITIES SIDE */
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    /* Comming soon placeholder side */
+    .commingsoon {
+        padding: 5rem;
+        font-size: 15px;
+    }
+    /* end of Comming soon placeholder side */
+
+    /* read more btn side */
+    .read-more-btn-link {
+        -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+    }
+    /* end of read more btn side */
 }
