@@ -32,11 +32,11 @@ gsap.to('.char', {
 
 //handle observer to make object reveal on scroll animation
 const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry   => {
+    entries.forEach(entry => {
         entry.target.classList.toggle("show", entry.isIntersecting)
     })
 }, {
-    threshold: .1
+    threshold: .001
 });
 
 let introduceImage = document.querySelector('.introduce img');
@@ -44,3 +44,19 @@ let introduceText = document.querySelector('.introduceText');
 
 observer.observe(introduceImage);
 observer.observe(introduceText);
+
+const observerTechLogos = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('slideIn');
+        } else {
+            entry.target.classList.remove('slideIn');
+        }
+    })
+});
+
+let techStackTitle = document.querySelector('.tech-stack-section .title');
+let techLogos = document.querySelectorAll('.tech-stack-logos svg');
+
+observer.observe(techStackTitle);
+techLogos.forEach(element => observerTechLogos.observe(element));

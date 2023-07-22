@@ -1,6 +1,20 @@
 
 /* HANDLE CONTENT SIDE */
 
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* first content side OR first landing page side */
+.greet {
+    display: inline;
+}
+
+.ganjil-section.first {
+    background-color: var(--section-ganjil-color);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
 .scrollCommand {
     font-family: 'Gloria Hallelujah', cursive;
     color: var(--scroll-down-color);
@@ -20,34 +34,6 @@
 .scrollCommand p .downArrow {
     fill: var(--down-arrow-color);
     animation: bounceArrow 1s ease-in-out infinite;
-}
-
-h2 {
-    display: inline;
-}
-
-.ganjil-section.first {
-    background-color: var(--section-ganjil-color);
-    position: relative;
-    height: 100vh;
-    width: 100%;
-}
-
-.ganjil-section {
-    background-color: var(--section-ganjil-color);
-    position: relative;
-    width: 100%;
-}
-
-.genap-section {
-    background-color: var(--section-genap-color);
-    width: 100%;
-}
-
-.genap-section.full-screen {
-    background-color: var(--section-genap-color);
-    width: 100%;
-    height: 100vh;
 }
 
 .greeting {
@@ -70,7 +56,43 @@ h2 {
 .greeting h2:nth-child(2) {
     color: var(--main-fredo-name-color);
 }
+/* end of first content side OR first landing page side */
 
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* header image side */
+.headerImg {
+    position: absolute;
+    top: 140px;
+    left: 800px;
+    filter: drop-shadow(2px 3px 25px rgba(0, 0, 0, 0.25));
+}
+/* end of header image side */
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* the rest of the content side */
+.ganjil-section {
+    background-color: var(--section-ganjil-color);
+    position: relative;
+    width: 100%;
+}
+
+.genap-section {
+    background-color: var(--section-genap-color);
+    width: 100%;
+}
+
+.genap-section.full-screen {
+    background-color: var(--section-genap-color);
+    width: 100%;
+    height: 100vh;
+}
+/* end of the rest of the content side */
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* introducing side */
 .introduce {
     padding: 5rem;
     display: flex;
@@ -107,7 +129,91 @@ h2 {
 .introduceText.show {
     transform: translateX(0);
 }
+/* end of introducing side */
 
+
+/* Tech stack content side */
+.tech-stack-section {
+    padding-top: 4rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 4rem;
+}
+
+.tech-stack-section .title {
+    font-family: var(--greeting-header-font);
+    color: var(--main-text-color);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-100%);
+}
+
+.tech-stack-section .title.show {
+    transform: translateX(0);
+}
+
+.tech-stack-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.tech-stack-logos svg {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: var(--svg-logo-background-color);
+    width: 10%;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.tech-stack-logos svg:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+}
+
+.tech-stack-logos svg:nth-child(2) {
+    transition: all 0.5s ease 0.3s;
+}
+
+.tech-stack-logos svg:nth-child(3) {
+    transition: all 0.5s ease 0.4s;
+}
+
+.tech-stack-logos svg:nth-child(4) {
+    transition: all 0.5s ease 0.5s;
+}
+
+.tech-stack-logos svg:nth-child(5) {
+    transition: all 0.5s ease 0.6s;
+}
+
+.tech-stack-logos svg:nth-child(6) {
+    transition: all 0.5s ease 0.7s;
+}
+
+.tech-stack-logos svg:nth-child(7) {
+    transition: all 0.5s ease 0.8s;
+}
+
+.tech-stack-logos svg.slideIn {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.tech-stack-logos svg:hover {
+    transform: scale(1.2);
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Comming soon placeholder side */
+/* 
+    NOTE:
+    use this class to the h3 html component to make the 'comming soon' content placeholder working
+ */
 .commingsoon {
     display: flex;
     justify-content: center;
@@ -116,3 +222,4 @@ h2 {
     font-size: 25px;
     color: var(--main-text-color);
 }
+/* end of comming soon placeholder side */

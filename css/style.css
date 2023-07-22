@@ -25,8 +25,17 @@ body {
     --hamburger-btn-color: white;
     --scroll-down-color: rgba(0, 0, 0, 0.575);
     --down-arrow-color: black;
+
+    /* responsive things */
     --responsive-navbar-base-color: black;
     --responsive-navbar-text-color: white;
+    --responsive-navbar-active-text-color: black;
+    --responsive-navbar-active-background-color: white;
+    /* end of responsive things */
+
+    --svg-logo-background-color: white;
+    --html-css-svg-text-color: black;
+    --c-logo-svg-color: #03599C;
 
     /* font variables */
     --logo-font: 'Seaweed Script', cursive;
@@ -37,8 +46,6 @@ body {
     /* dimension and measurement variables */
     --padding-top-navbar: 18px;
     --padding-bottom-navbar: 18px;
-
-    /* animation side */
 }
 
 body.dark {
@@ -55,8 +62,17 @@ body.dark {
     --hamburger-btn-color: #002450;
     --scroll-down-color: rgba(255, 255, 255, 0.575);
     --down-arrow-color: rgb(255, 255, 255);
+
+    /* responsive things */
     --responsive-navbar-base-color: linear-gradient(180deg, #025EB3 0%, #001C3E 100%);
     --responsive-navbar-text-color: rgb(255, 255, 255);
+    --responsive-navbar-active-text-color: black;
+    --responsive-navbar-active-background-color: white;
+    /* end of reseponsive things */
+
+    --svg-logo-background-color: rgb(0, 38, 62);
+    --html-css-svg-text-color: white;
+    --c-logo-svg-color: rgb(24, 138, 205);
 }
 
 /* header side */
@@ -99,6 +115,12 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
+    color: var(--navbar-hover-text-color);
+    padding: 10px;
+    background-color: var(--navbar-hover-background-color);
+}
+
+header nav ul li a.active {
     color: var(--navbar-hover-text-color);
     padding: 10px;
     background-color: var(--navbar-hover-background-color);

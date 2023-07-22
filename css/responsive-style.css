@@ -77,6 +77,12 @@
         padding-bottom: 0.2rem;
     }
 
+    header nav ul li a.active {
+        color: var(--responsive-navbar-active-text-color);
+        padding: 10px;
+        background-color: var(--responsive-navbar-active-background-color);
+    }
+
     header nav .toggle-dark-mode {
         top: 7px;
     }
@@ -85,6 +91,10 @@
 
     /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
     /* first content greeting side */
+    .greet {
+        display: inline;
+    }
+
     .greeting {
         padding-top: 60%;
         font-size: 30px;
@@ -188,9 +198,46 @@
     .introduceText.show {
         transform: translateY(0);
     }
+    /* end of introducing content side */
 
+
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    /* Comming soon placeholder side */
     .commingsoon {
         padding: 5rem;
         font-size: 15px;
+    }
+    /* end of Comming soon placeholder side */
+
+
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    /* header image side */
+    .headerImg {
+        display: none;
+    }
+    /* end of header image side */
+
+
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    /* second content side */
+    .tech-stack-section {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .tech-stack-section .title {
+        font-size: 25px;
+    }
+
+    .tech-stack-logos {
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+
+    .tech-stack-logos svg {
+        width: 20%;
+        margin-bottom: 10px;
     }
 }
