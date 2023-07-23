@@ -2,3 +2,172 @@
 
 /* HANDLE ABOUT PAGE STYLING */
 
+.whois {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--greeting-header-font);
+    font-size: 30px;
+    color: var(--main-text-color);
+}
+
+.skills-container h3 {
+    font-family: var(--greeting-header-font);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: var(--main-text-color);
+    transform: translateX(-100%);
+}
+
+.skills-container h3.show {
+    transform: translateX(0);
+}
+
+.skills-container .category {
+    font-family: var(--greeting-header-font);
+    font-size: 20px;
+    padding-left: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: var(--main-text-color);
+}
+
+
+/* handle category animation on scroll side */
+.skills-container .category:nth-child(3) {
+    transform: translateX(-70%);
+    opacity: 0;
+}
+
+.skills-container .category:nth-child(3).show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.skills-container .category:nth-child(6) {
+    transform: translateX(-70%);
+    opacity: 0;
+}
+
+.skills-container .category:nth-child(6).show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.skills-container .category:nth-child(9) {
+    transform: translateX(-70%);
+    opacity: 0;
+}
+
+.skills-container .category:nth-child(9).show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.skills-container .category:nth-child(12) {
+    transform: translateX(-70%);
+    opacity: 0;
+}
+
+.skills-container .category:nth-child(12).show {
+    transform: translateY(0);
+    opacity: 1;
+}
+/* end of handle category animation on scroll side */
+
+
+.tech-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+/* handle logo animation on scroll side */
+.skills-container .tech-logos:nth-child(4) {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.skills-container .tech-logos:nth-child(4).show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.skills-container .tech-logos:nth-child(7) {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.skills-container .tech-logos:nth-child(7).show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.skills-container .tech-logos:nth-child(10) {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.skills-container .tech-logos:nth-child(10).show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.skills-container .tech-logos:nth-child(13) {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.skills-container .tech-logos:nth-child(13).show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* end of handle logo animation on scroll side */
+
+.tech-logos .logo-container {
+    width: 10%;
+    padding-bottom: 2rem;
+}
+
+.tech-logos .logo-container svg {
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tech-logos .logo-container svg:hover {
+    box-shadow: none;
+}
+
+.tech-logos .logo-container h4 {
+    font-family: var(--greeting-header-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 15px;
+    color: var(--main-text-color);
+}
+
+.hover-prompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.2rem;
+    opacity: 0;
+    color: var(--main-text-color);
+    animation: bounceSlow 2s ease-in-out infinite;
+}
+
+.hover-prompt.show {
+    opacity: 1;
+}

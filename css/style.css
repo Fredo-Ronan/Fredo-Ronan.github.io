@@ -5,6 +5,8 @@
     padding: 0;
     margin: 0;
 
+    scroll-behavior: smooth;
+
     transition: 1s;
 }
 
@@ -54,6 +56,11 @@ body {
     --c-logo-svg-color: #03599C;
     --github-logo-color: #181616;
     --github-text-logo-color: #100E0F;
+    --socket-io-logo: #010101;
+    --express-logo: black;
+    --bash-logo-color: #293138;
+    --kali-linux-logo-color: black;
+    --jquery-logo-color: #131B28;
 }
 
 body.dark {
@@ -88,6 +95,11 @@ body.dark {
     --c-logo-svg-color: rgb(24, 138, 205);
     --github-logo-color: #ffffff;
     --github-text-logo-color: #ffffff;
+    --socket-io-logo: #ffffff;
+    --express-logo: white;
+    --bash-logo-color: #ffffff;
+    --kali-linux-logo-color: rgb(255, 255, 255);
+    --jquery-logo-color: #ffffff;
 }
 
 /* header side */

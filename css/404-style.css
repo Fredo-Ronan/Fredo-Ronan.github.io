@@ -1,0 +1,24 @@
+
+/* HANDLE 404 PAGE NOT FOUND STYLING */
+
+.page-404-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30vh;
+    font-family: var(--greeting-header-font);
+    opacity: 0.5;
+}
+
+.page-404-container .text-404 {
+    font-size: 10rem;
+}
+
+.page-404-container .page-not-found-text {
+    font-size: 2rem;
+}
+
+.page-404-container h4 {
+    padding-top: 1rem;
+}

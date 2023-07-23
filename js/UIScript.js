@@ -62,3 +62,11 @@ let techLogos = document.querySelectorAll('.tech-stack-logos svg');
 observer.observe(techStackTitle);
 observer.observe(hoverPrompt);
 techLogos.forEach(element => observerTechLogos.observe(element));
+
+let highlightedProjects = document.querySelector('.projects-section .title');
+let projectDescription = document.querySelector('.project-description');
+let projectPreviewImage = document.querySelector('.demo-images-wrapper');
+
+observer.observe(highlightedProjects);
+observer.observe(projectDescription);
+observer.observe(projectPreviewImage);

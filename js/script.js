@@ -35,21 +35,3 @@ hamburgerBtn.addEventListener('click', () => {
     link.classList.toggle('float');
   })
 });
-
-
-// working with social media links from svg
-let githubLink = document.querySelector('.github-logo');
-let linkedinLink = document.querySelector('.linkedin-logo');
-let instagramLink = document.querySelector('.instagram-logo');
-
-githubLink.addEventListener('click', () => {
-  window.open('https://github.com/Fredo-Ronan');
-});
-
-linkedinLink.addEventListener('click', () => {
-  window.open('https://www.linkedin.com/in/fredo-ronan-135844212/');
-});
-
-instagramLink.addEventListener('click', () => {
-  window.open('https://www.instagram.com/fredoronan/');
-})

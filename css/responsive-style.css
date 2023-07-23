@@ -221,7 +221,7 @@
     }
 
     .tech-stack-section .title {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .tech-stack-logos {
@@ -245,6 +245,44 @@
     }
     /* end of second content OR tech stack side */
 
+
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    /* First Highlighted Project side */
+    .projects-section .title {
+        font-size: 22px;
+    }
+
+    .projects-container {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .projects-container .demo-images-wrapper {
+        transform: translateX(-100%);
+    }
+
+    .demo-images-wrapper.show {
+        transform: translateX(0);
+    }
+
+    .project-description.show {
+        max-width: none;
+    }
+
+    .project-description h3 {
+        font-size: 25px;
+    }
+
+    .project-description p {
+        font-size: 12px;
+    }
+
+    .tech-used-container svg {
+        width: 25%;
+    }
+    /* end of first highlighted project side */
+
+
     /* BASIC UTILITIES SIDE */
     /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
     /* Comming soon placeholder side */
@@ -260,4 +298,15 @@
         clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
     }
     /* end of read more btn side */
+
+
+    /* 404 page not found side */
+    .page-404-container .text-404 {
+        font-size: 6rem;
+    }
+    
+    .page-404-container .page-not-found-text {
+        font-size: 1.5rem;
+    }
+    /* end of 404 page not found side */
 }
