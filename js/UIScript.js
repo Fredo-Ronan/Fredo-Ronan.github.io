@@ -35,8 +35,6 @@ const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("show", entry.isIntersecting)
     })
-}, {
-    threshold: .001
 });
 
 let introduceImage = document.querySelector('.introduce img');
@@ -64,9 +62,17 @@ observer.observe(hoverPrompt);
 techLogos.forEach(element => observerTechLogos.observe(element));
 
 let highlightedProjects = document.querySelector('.projects-section .title');
-let projectDescription = document.querySelector('.project-description');
-let projectPreviewImage = document.querySelector('.demo-images-wrapper');
+
+let projectDescription = document.querySelectorAll('.project-description');
+let projectDescriptionRight = document.querySelectorAll('.project-description .right');
+
+let projectPreviewImage = document.querySelectorAll('.demo-images-wrapper');
+let projectPreviewImageLeft = document.querySelectorAll('.demo-images-wrapper .left');
 
 observer.observe(highlightedProjects);
-observer.observe(projectDescription);
-observer.observe(projectPreviewImage);
+
+projectDescriptionRight.forEach(element => observer.observe(element));
+projectPreviewImageLeft.forEach(element => observer.observe(element));
+
+projectDescription.forEach(element => observer.observe(element));
+projectPreviewImage.forEach(element => observer.observe(element));

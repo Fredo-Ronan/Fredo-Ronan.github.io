@@ -77,8 +77,8 @@ body.dark {
     --hamburger-btn-color: #002450;
     --scroll-down-color: rgba(255, 255, 255, 0.575);
     --down-arrow-color: rgb(255, 255, 255);
-    --read-more-btn-color: rgb(0, 138, 224);
-    --read-more-text-color: black;
+    --read-more-btn-color: rgb(1, 115, 186);
+    --read-more-text-color: rgb(255, 255, 255);
     --read-more-text-hover-color: rgb(255, 255, 255);
     --read-more-btn-hover-color: #001C3E;
 

@@ -257,6 +257,12 @@
         gap: 2rem;
     }
 
+    .projects-container.toggle-pos {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 5px;
+    }
+
     .projects-container .demo-images-wrapper {
         transform: translateX(-100%);
     }
@@ -265,7 +271,22 @@
         transform: translateX(0);
     }
 
-    .project-description.show {
+    .projects-container .project-description.right {
+        max-width: none;
+        padding-top: 1rem;
+        transform: translateX(-100%);
+    }
+
+    .projects-container .project-description.right.show {
+        max-width: none;
+        transform: translateX(0);
+    }
+
+    .projects-container .project-description {
+        max-width: none;
+    }
+
+    .projects-container .project-description.show {
         max-width: none;
     }
 
