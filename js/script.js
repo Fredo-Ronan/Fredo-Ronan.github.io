@@ -11,6 +11,49 @@ darkModeCheck.addEventListener('click', function(){
     body.classList.toggle('dark');
 });
 
+
+//pass the toggle dark mode state between html page
+let aLinks = document.querySelectorAll('a');
+
+for(let i = 0; i<aLinks.length; i++){
+  aLinks[i].addEventListener('click', function(e){
+    e.preventDefault();
+
+    let bodyClass;
+
+    if(body.className === 'dark'){
+      bodyClass = 'dark';
+    } else {
+      bodyClass = 'light';
+    }
+
+    localStorage.setItem('darkModeState', bodyClass);
+    window.location.href = aLinks[i].href;
+  });
+
+  console.log(aLinks[i]);
+}
+
+
+// fetch localStorage for darkMode state
+window.onload = (event) => {
+  let darkModeState = localStorage.getItem('darkModeState');
+
+  if(darkModeState === 'dark'){
+    //dark mode state already
+    darkModeCheck.checked = true;
+    sunSVG.classList.toggle('hide');
+    moonSVG.classList.toggle('hide');
+    body.classList.toggle('dark');
+  }
+  // if the if check is not true then leave it because it's still in light mode
+
+  //clear the localStorage
+  localStorage.clear();
+  localStorage.removeItem('darkModeState');
+};
+
+
 // working with hamburger menu animation
 let hamburgerBtn = document.getElementById('floating-hamburger');
 let hamburgerBtnValue = document.querySelector('.hamburgerBtn');

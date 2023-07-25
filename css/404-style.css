@@ -8,6 +8,7 @@
     align-items: center;
     padding-top: 30vh;
     font-family: var(--greeting-header-font);
+    color: var(--main-text-color);
     opacity: 0.5;
 }
 
