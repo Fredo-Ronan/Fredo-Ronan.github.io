@@ -1,0 +1,73 @@
+
+/* HANDLE GITHUB PAGE STYLING */
+
+.opening-text {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    font-family: var(--greeting-header-font);
+    color: var(--main-text-color);
+}
+
+.opening-text .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.opening-text .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    font-size: 20px;
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem;
+    color: var(--main-text-color);
+}
+
+.cards-container .cards {
+    position: relative;
+    max-width: 400px;
+    height: 400px;
+    background-color: var(--section-genap-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 4px 6px 15px 3px rgba(0,0,0,0.1);
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.cards-container .cards.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.cards-container .cards h3 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo-container svg {
+    width: 15%;
+}

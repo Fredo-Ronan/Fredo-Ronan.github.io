@@ -30,8 +30,6 @@ for(let i = 0; i<aLinks.length; i++){
     localStorage.setItem('darkModeState', bodyClass);
     window.location.href = aLinks[i].href;
   });
-
-  console.log(aLinks[i]);
 }
 
 
