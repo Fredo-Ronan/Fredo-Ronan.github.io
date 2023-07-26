@@ -2,7 +2,7 @@
 // HANDLE JAVASCRIPT FOR GITHUB PAGE
 
 //function to generate the cards content of github repositories
-function generateCardContent(rootElement, repoTitle, repoDescDetail, techUsed, githubVercel, githubRepoLink){
+function generateCardContent(rootElement, repoTitle, repoDescDetail, techUsed, githubVercel, githubRepoLink, os){
     //create the main container card
     let card = document.createElement('div');
     card.className = 'cards';
@@ -30,6 +30,46 @@ function generateCardContent(rootElement, repoTitle, repoDescDetail, techUsed, g
     //create the main repository description container
     let descriptionContainer = document.createElement('div');
     descriptionContainer.className = 'card-description';
+
+    let osBadgeContainer = document.createElement('div');
+    osBadgeContainer.className = 'os-supported-container';
+    osBadgeContainer.style.display = 'flex';
+    osBadgeContainer.style.gap = '0.5rem';
+    osBadgeContainer.style.paddingTop = '5px';
+
+    //if statement to choose from the parameter what os are supported
+    if(os.includes('Windows')){
+        // windows supported
+        //create OS supported badge
+        let osBadge = document.createElement('img');
+        osBadge.src = 'https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white&style=flat';
+        
+        //append to the osBadgeContainer container
+        osBadgeContainer.appendChild(osBadge);
+    }
+
+    if(os.includes('Linux')){
+        //linux supported
+        //create OS supported badge
+        let osBadge = document.createElement('img');
+        osBadge.src = 'https://img.shields.io/badge/Linux-B0A404?logo=linux&logoColor=white&style=flat';
+
+        //append to the osBadgeContainer container
+        osBadgeContainer.appendChild(osBadge);
+    }
+
+    if(os.includes('MacOS')){
+        //MacOS supported
+        //create OS supported badge
+        let osBadge = document.createElement('img');
+        osBadge.src = 'https://img.shields.io/badge/Mac%20OS-BE06D6?logo=macos&logoColor=white&style=flat';
+
+        //append to the osBadgeContainer container
+        osBadgeContainer.appendChild(osBadge);
+    }
+
+    //append the osBadgeContainer to the description container
+    descriptionContainer.appendChild(osBadgeContainer);
 
     //create the h3 element for the repo title
     let h3Title = document.createElement('h3');
@@ -143,7 +183,8 @@ generateCardContent(
     'Multi user web chat that support feature like send voice message, photos, and many more.',
     arrayOfSvg,
     'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Live-Chat-Web&theme=radical',
-    'https://github.com/Fredo-Ronan/Live-Chat-Web'
+    'https://github.com/Fredo-Ronan/Live-Chat-Web',
+    'Windows, Linux, MacOS'
 );
 
 //clear the array of svg
@@ -162,7 +203,8 @@ generateCardContent(
     'Snake game that made without using graphics.h C library.',
     arrayOfSvg,
     'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Snake-Game-Console-without-graphics.h&theme=radical',
-    'https://github.com/Fredo-Ronan/Snake-Game-Console-without-graphics.h'
+    'https://github.com/Fredo-Ronan/Snake-Game-Console-without-graphics.h',
+    'Windows'
 );
 
 // JAWA LANG GITHUB REPO CONTENT ====================================================================================================
@@ -174,7 +216,8 @@ generateCardContent(
     `,
     arrayOfSvg,
     'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Jawa-lang&theme=radical',
-    'https://github.com/Fredo-Ronan/Jawa-lang'
+    'https://github.com/Fredo-Ronan/Jawa-lang',
+    'Windows'
 );
 
 // C HEADER FILE COLLECTION GITHUB REPO CONTENT ====================================================================================================
@@ -184,7 +227,8 @@ generateCardContent(
     `Collection of .h files or C library header files that i've made to solve certain purposes.`,
     arrayOfSvg,
     'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=C_Header_Files_Collection&theme=radical',
-    'https://github.com/Fredo-Ronan/C_Header_Files_Collection'
+    'https://github.com/Fredo-Ronan/C_Header_Files_Collection',
+    'Windows, Linux'
 );
 
 arrayOfSvg = [];
@@ -219,7 +263,8 @@ generateCardContent(
     `,
     arrayOfSvg,
     'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=DistroBaju-UserSide&theme=radical',
-    'https://github.com/Fredo-Ronan/DistroBaju-UserSide'
+    'https://github.com/Fredo-Ronan/DistroBaju-UserSide',
+    'Windows'
 );
 
 arrayOfSvg = [];
@@ -245,7 +290,8 @@ generateCardContent(
     `,
     arrayOfSvg,
     'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Java-Class-Utilities&theme=radical',
-    'https://github.com/Fredo-Ronan/Java-Class-Utilities'
+    'https://github.com/Fredo-Ronan/Java-Class-Utilities',
+    'Windows'
 );
 
 arrayOfSvg = [];
@@ -267,7 +313,8 @@ generateCardContent(
     `,
     arrayOfSvg,
     'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Custom-Bash-Scripts&theme=radical',
-    'https://github.com/Fredo-Ronan/Custom-Bash-Scripts'
+    'https://github.com/Fredo-Ronan/Custom-Bash-Scripts',
+    'Linux'
 );
 
 arrayOfSvg = [];
@@ -299,5 +346,6 @@ generateCardContent(
     `,
     arrayOfSvg,
     'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Windows-Script-Automation&theme=radical',
-    'https://github.com/Fredo-Ronan/Windows-Script-Automation'
+    'https://github.com/Fredo-Ronan/Windows-Script-Automation',
+    'Windows'
 );

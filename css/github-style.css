@@ -31,6 +31,11 @@
     display: inline;
 }
 
+.github-logo-container svg {
+    position: relative;
+    top: -3px;
+}
+
 .cards-container {
     display: flex;
     justify-content: center;
@@ -63,7 +68,7 @@
 .cards-container .cards h3 {
     font-size: 25px;
     font-weight: bold;
-    padding-top: 1rem;
+    padding-top: 0.2rem;
 }
 
 .tech {
