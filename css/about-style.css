@@ -12,7 +12,7 @@
     color: var(--main-text-color);
 }
 
-.skills-container h3 {
+.headline {
     font-family: var(--greeting-header-font);
     font-size: 30px;
     display: flex;
@@ -24,11 +24,11 @@
     transform: translateX(-100%);
 }
 
-.skills-container h3.show {
+.headline.show {
     transform: translateX(0);
 }
 
-.skills-container .category {
+.category {
     font-family: var(--greeting-header-font);
     font-size: 20px;
     padding-left: 6rem;
@@ -39,43 +39,13 @@
 
 
 /* handle category animation on scroll side */
-.skills-container .category:nth-child(3) {
+.category {
     transform: translateX(-70%);
     opacity: 0;
 }
 
-.skills-container .category:nth-child(3).show {
+.category.show {
     transform: translateX(0);
-    opacity: 1;
-}
-
-.skills-container .category:nth-child(6) {
-    transform: translateX(-70%);
-    opacity: 0;
-}
-
-.skills-container .category:nth-child(6).show {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.skills-container .category:nth-child(9) {
-    transform: translateX(-70%);
-    opacity: 0;
-}
-
-.skills-container .category:nth-child(9).show {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.skills-container .category:nth-child(12) {
-    transform: translateX(-70%);
-    opacity: 0;
-}
-
-.skills-container .category:nth-child(12).show {
-    transform: translateY(0);
     opacity: 1;
 }
 /* end of handle category animation on scroll side */
@@ -92,42 +62,12 @@
 }
 
 /* handle logo animation on scroll side */
-.skills-container .tech-logos:nth-child(4) {
+.tech-logos {
     transform: translateY(30px);
     opacity: 0;
 }
 
-.skills-container .tech-logos:nth-child(4).show {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.skills-container .tech-logos:nth-child(7) {
-    transform: translateX(-100%);
-    opacity: 0;
-}
-
-.skills-container .tech-logos:nth-child(7).show {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.skills-container .tech-logos:nth-child(10) {
-    transform: translateY(30px);
-    opacity: 0;
-}
-
-.skills-container .tech-logos:nth-child(10).show {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.skills-container .tech-logos:nth-child(13) {
-    transform: translateX(-100%);
-    opacity: 0;
-}
-
-.skills-container .tech-logos:nth-child(13).show {
+.tech-logos.show {
     transform: translateY(0);
     opacity: 1;
 }

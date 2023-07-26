@@ -8,12 +8,12 @@
         padding-top: 7rem;
     }
 
-    .skills-container h3 {
+    .headline {
         font-size: 20px;
         padding-bottom: 1rem;
     }
 
-    .skills-container .category {
+    .category {
         font-size: 15px;
         padding-left: 0;
         display: flex;

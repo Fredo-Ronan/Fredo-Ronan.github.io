@@ -3,7 +3,7 @@
 let skillsContainer = document.getElementById('skills-container');
 
 skillsContainer.innerHTML = `
-<h3>Things that i can📚</h3>
+<h3 class="headline">Things that i can📚</h3>
 <p class="hover-prompt">Hover them to see the detail....</p>
 <h4 class="category">Programming Languages</h4>
 <div class="tech-logos">
@@ -1254,22 +1254,12 @@ const observer = new IntersectionObserver(entries => {
 });
 
 
-let skillTitle = document.querySelector('.skills-container h3');
-let logos1 = document.querySelector('.skills-container .tech-logos:nth-child(4)');
-let logos2 = document.querySelector('.skills-container .tech-logos:nth-child(7)');
-let logos3 = document.querySelector('.skills-container .tech-logos:nth-child(10)');
-let logos4 = document.querySelector('.skills-container .tech-logos:nth-child(13)');
-let category1 = document.querySelector('.skills-container .category:nth-child(3)');
-let category2 = document.querySelector('.skills-container .category:nth-child(6)');
-let category3 = document.querySelector('.skills-container .category:nth-child(9)');
-let category4 = document.querySelector('.skills-container .category:nth-child(12)');
+let skillTitle = document.querySelectorAll('h3');
+let hoverPrompt = document.querySelectorAll('.hover-prompt');
+let logos = document.querySelectorAll('.tech-logos');
+let category = document.querySelectorAll('.category');
 
-observer.observe(skillTitle);
-observer.observe(logos1);
-observer.observe(logos2);
-observer.observe(logos3);
-observer.observe(logos4);
-observer.observe(category1);
-observer.observe(category2);
-observer.observe(category3);
-observer.observe(category4);
+skillTitle.forEach(element => observer.observe(element));
+hoverPrompt.forEach(element => observer.observe(element));
+logos.forEach(element => observer.observe(element));
+category.forEach(element => observer.observe(element));
