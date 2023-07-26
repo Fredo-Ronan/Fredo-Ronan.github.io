@@ -66,6 +66,24 @@
 }
 /* end of read more button base styling */
 
+
+/* footer side */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+    padding-top: 2rem;
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+}
+
+.footer-container {
+    opacity: 0.8;
+}
+/* end of footer side */
+
+
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Comming soon placeholder side */
 /* 

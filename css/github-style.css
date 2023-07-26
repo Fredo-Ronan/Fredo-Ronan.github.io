@@ -26,6 +26,11 @@
     opacity: 0.8;
 }
 
+.github-logo-container {
+    width: 10%;
+    display: inline;
+}
+
 .cards-container {
     display: flex;
     justify-content: center;
@@ -41,7 +46,7 @@
 .cards-container .cards {
     position: relative;
     max-width: 400px;
-    height: 400px;
+    height: 480px;
     background-color: var(--section-genap-color);
     padding: 30px;
     border-radius: 10px;
@@ -59,6 +64,10 @@
     font-size: 25px;
     font-weight: bold;
     padding-top: 1rem;
+}
+
+.tech {
+    padding-bottom: 2rem;
 }
 
 .logo-container {

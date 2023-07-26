@@ -69,6 +69,16 @@ function generateCardContent(rootElement, repoTitle, repoDescDetail, techUsed, g
     //append the tech container to the description container
     descriptionContainer.appendChild(techContainer);
 
+    //create the learn more btn to real github repo page
+    let aLinkToProject = document.createElement('a');
+    aLinkToProject.href = githubRepoLink;
+    aLinkToProject.className = 'read-more-btn-link';
+    aLinkToProject.style.paddingLeft = '8px';
+    aLinkToProject.innerHTML = 'Learn More&nbsp;&nbsp;&nbsp;↗';
+
+    //append the link to project anchor tag to the main description container
+    descriptionContainer.appendChild(aLinkToProject);
+
 
     //append the description container to the main container of the card
     card.appendChild(descriptionContainer);
@@ -126,7 +136,7 @@ arrayOfSvg.push(
 );
 
 //generate card content by calling the generateCardContent function
-// LIVE CHAT GITHUB REPO CONTENT
+// LIVE CHAT GITHUB REPO CONTENT ====================================================================================================
 generateCardContent(
     cardContainer,
     'Live Chat Web App',
@@ -145,7 +155,7 @@ arrayOfSvg.push(
     </svg>`
 );
 
-//SNAKE GAME GITHUB REPO CONTENT
+//SNAKE GAME GITHUB REPO CONTENT ====================================================================================================
 generateCardContent(
     cardContainer,
     'Snake Game in C',
@@ -155,7 +165,7 @@ generateCardContent(
     'https://github.com/Fredo-Ronan/Snake-Game-Console-without-graphics.h'
 );
 
-// JAWA LANG GITHUB REPO CONTENT
+// JAWA LANG GITHUB REPO CONTENT ====================================================================================================
 generateCardContent(
     cardContainer,
     'Jawa Lang <h4 style="font-size: 15px; display: inline; font-style: italic; opacity: 0.8;">(Under development)</h4>',
@@ -167,7 +177,7 @@ generateCardContent(
     'https://github.com/Fredo-Ronan/Jawa-lang'
 );
 
-// C HEADER FILE COLLECTION GITHUB REPO CONTENT
+// C HEADER FILE COLLECTION GITHUB REPO CONTENT ====================================================================================================
 generateCardContent(
     cardContainer,
     'C Header File Collections',
@@ -200,7 +210,7 @@ arrayOfSvg.push(
 </svg>`
 );
 
-// DISTRO BAJU BIG JAVA PROJECT GITHUB REPO CONTENT (USER SIDE)
+// DISTRO BAJU BIG JAVA PROJECT GITHUB REPO CONTENT (USER SIDE) ========================================================================================
 generateCardContent(
     cardContainer,
     'Distro Baju Desktop App',
@@ -226,7 +236,7 @@ arrayOfSvg.push(
 </svg>`
 );
 
-// JAVA CLASS UTILITES GITHUB REPO CONTENT
+// JAVA CLASS UTILITES GITHUB REPO CONTENT ====================================================================================================
 generateCardContent(
     cardContainer,
     'Java Class Utilities',
@@ -240,7 +250,7 @@ generateCardContent(
 
 arrayOfSvg = [];
 
-// CUSTOM BASH SCRIPT GITHUB REPO CONTENT
+// CUSTOM BASH SCRIPT GITHUB REPO CONTENT ====================================================================================================
 arrayOfSvg.push(
     `<svg viewBox="0 0 128 128">
     <title>Bash Script (Linux Shell)</title>
@@ -262,7 +272,7 @@ generateCardContent(
 
 arrayOfSvg = [];
 
-// WINDOWS SCRIPT AUTOMATION GITHUB REPO CONTENT
+// WINDOWS SCRIPT AUTOMATION GITHUB REPO CONTENT ====================================================================================================
 arrayOfSvg.push(
     `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>

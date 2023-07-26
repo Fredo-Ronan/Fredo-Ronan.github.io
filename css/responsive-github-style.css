@@ -3,11 +3,39 @@
 @media screen and (max-width: 576px){
     .opening-text .title {
         font-size: 20px;
+        text-align: center;
     }
 
     .opening-text .description {
         font-size: 15px;
         padding-left: 1rem;
         padding-right: 1rem;
+        text-align: center;
+    }
+
+    .github-logo-container {
+        width: 5%;
+    }
+
+    .github-logo-container svg {
+        position: relative;
+        top: -3px;
+    }
+
+    .github-logo {
+        width: 10%;
+    }
+
+    .cards-container .cards {
+        height: auto;
+        padding-bottom: 2.5rem;
+    }
+
+    .cards-container .cards h3 {
+        font-size: 22px;
+    }
+
+    .cards-container .cards p {
+        font-size: 15px;
     }
 }

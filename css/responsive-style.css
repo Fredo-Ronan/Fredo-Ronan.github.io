@@ -21,8 +21,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        clip-path: circle(1px at 90% 85%);
-        -webkit-clip-path: circle(1px at 90% 85%);
+        clip-path: circle(0px at 90% 85%);
+        -webkit-clip-path: circle(0px at 90% 85%);
 
         z-index: 10;
 
@@ -302,6 +302,18 @@
         width: 25%;
     }
     /* end of first highlighted project side */
+
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    /* footer side */
+    .footer {
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    .footer-container {
+        font-size: 12px;
+    }
+    /* end of footer side */
 
 
     /* BASIC UTILITIES SIDE */
