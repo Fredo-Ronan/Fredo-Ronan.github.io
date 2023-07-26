@@ -45,10 +45,6 @@ window.onload = (event) => {
     body.classList.toggle('dark');
   }
   // if the if check is not true then leave it because it's still in light mode
-
-  //clear the localStorage
-  localStorage.clear();
-  localStorage.removeItem('darkModeState');
 };
 
 
