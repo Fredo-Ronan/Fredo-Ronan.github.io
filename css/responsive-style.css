@@ -126,6 +126,7 @@
         background: var(--hamburger-btn-color);
         z-index: 1;
         filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.25));
+        transition: none;
     }
 
     .floating-hamburger-btn .hamburgerBtn .hamburger {

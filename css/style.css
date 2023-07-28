@@ -33,6 +33,10 @@ body {
     --read-more-btn-hover-color: white;
     --footer-background-color: rgb(212, 212, 212);
     --footer-text-color: black;
+    --border-top-accordion-content-color: rgba(103, 103, 103, 0.515);
+    --upcoming-text-background-color: black;
+    --upcoming-text-hover-background-color: white;
+    --accordion-background-color: white;
 
     /* responsive things */
     --responsive-navbar-base-color: black;
@@ -87,6 +91,10 @@ body.dark {
     --read-more-btn-hover-color: #001C3E;
     --footer-background-color: rgb(0, 60, 97);
     --footer-text-color: rgb(255, 255, 255);
+    --border-top-accordion-content-color: rgba(255, 255, 255, 0.515);
+    --upcoming-text-background-color: rgb(0, 191, 255);
+    --upcoming-text-hover-background-color: black;
+    --accordion-background-color: rgb(1, 40, 98);
 
     /* responsive things */
     --responsive-navbar-base-color: linear-gradient(180deg, #025EB3 0%, #001C3E 100%);

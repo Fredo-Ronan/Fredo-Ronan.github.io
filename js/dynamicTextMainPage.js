@@ -7,8 +7,8 @@ var words = ['An Informatics Engineering Student', 'Tech Enthusiast', 'I like so
     len = words.length,
     forwards = true,
     skip_count = 0,
-    skip_delay = 15,
-    speed = 70;
+    skip_delay = 40,
+    speed = 25;
 var wordflick = function () {
   setInterval(function () {
     if (forwards) {

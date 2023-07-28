@@ -55,11 +55,16 @@ let topValue = window.getComputedStyle(hamburgerBtn).top.replace('px','');
 
 window.addEventListener('scroll', function(){
   let value = this.window.scrollY;
+
+  // let result = parseFloat(parseFloat(topValue).toFixed(4)) + parseFloat(parseFloat(value).toFixed(4)) + parseFloat('60');
+
+  // console.log('Window scroll: ' + parseFloat(parseFloat(value).toFixed(4)));
+  // console.log(result + 'px');
   
-  hamburgerBtn.style.top = parseInt(topValue) + parseInt(value) + 60 + 'px';
+  hamburgerBtn.style.top = parseFloat(topValue) + parseFloat(value) + 60.00 + 'px';
 
   if(value == 0){
-    hamburgerBtn.style.top = parseInt(topValue) + 'px';
+    hamburgerBtn.style.top = parseFloat(topValue) + 'px';
   }
 });
 

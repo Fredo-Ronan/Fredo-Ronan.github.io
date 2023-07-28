@@ -1,0 +1,27 @@
+
+/* HANDLE THE RESPONSIVE OF THE PROJECT PAGE STYLING */
+@media screen and (max-width: 576px) {
+    .opening-text .title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .opening-text .description {
+        font-size: 15px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+
+    .logo-container svg {
+        width: 18%;
+    }
+
+    .accordion-title {
+        font-size: 15px;
+    }
+
+    .accordion-content {
+        font-size: 12px;
+    }
+}
