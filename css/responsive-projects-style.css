@@ -13,6 +13,10 @@
         text-align: center;
     }
 
+    .cards-container .cards {
+        height: auto;
+    }
+
     .logo-container svg {
         width: 18%;
     }
@@ -23,5 +27,9 @@
 
     .accordion-content {
         font-size: 12px;
+    }
+
+    .tech-used-text {
+        font-size: 15px;
     }
 }

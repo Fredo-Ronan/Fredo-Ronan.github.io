@@ -128,7 +128,7 @@ skillsContainer.innerHTML = `
     </div>
 </div>
 <hr width="90%" style="margin: auto;">
-<h4 class="category">Tools/Library</h4>
+<h4 class="category">Tools/Library/Framework</h4>
 <div class="tech-logos">
     <div class="logo-container">
         <svg viewBox="0 0 128 128">

@@ -41,7 +41,7 @@ function generateToolsLearning(rootElement, svgToolsLogo){
     //create the h4 element for the title category
     let h4Category = document.createElement('div');
     h4Category.className = 'category';
-    h4Category.innerHTML = 'Tools/Libray';
+    h4Category.innerHTML = 'Tools/Library/Framework';
 
     //append to the root element
     rootElement.appendChild(h4Category);

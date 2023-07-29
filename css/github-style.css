@@ -36,6 +36,30 @@
     top: -3px;
 }
 
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.search-text {
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-left: 1rem;
+    font-weight: lighter;
+    width: 50%;
+    transition: none;
+}
+
+.search-text:focus {
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
+    outline: 2px solid rgba(103, 103, 103, 0.499);
+}
+
 .cards-container {
     display: flex;
     justify-content: center;
@@ -63,6 +87,10 @@
 .cards-container .cards.show {
     transform: translateY(0);
     opacity: 1;
+}
+
+.cards-container .cards.hide {
+    display: none;
 }
 
 .cards-container .cards h3 {

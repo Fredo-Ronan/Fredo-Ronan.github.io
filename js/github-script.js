@@ -1,11 +1,49 @@
 
 // HANDLE JAVASCRIPT FOR GITHUB PAGE
 
+// DO NOT USE THIS ===========================================================================================================
+//class of github repositories fetch from github API
+// class GithubRepos {
+//     constructor(repoName, )
+// }
+
+// SAFE USAGE STARTS FROM HERE ===============================================================================================
+
+class GithubRepos {
+    constructor(repoName, techUsed, status, htmlElement){
+        this.repoName = repoName;
+        this.techUsed = techUsed;
+        this.status = status;
+        this.htmlElement = htmlElement;
+    }
+
+    getRepoName(){
+        return this.repoName;
+    }
+
+    getTechUsed(){
+        return this.techUsed;
+    }
+
+    getStatus(){
+        return this.status;
+    }
+
+    getHTMLElement(){
+        return this.htmlElement;
+    }
+}
+
+let arrayOfRepositories = [];
+let counter = 1;
+
 //function to generate the cards content of github repositories
 function generateCardContent(rootElement, repoTitle, repoDescDetail, techUsed, githubVercel, githubRepoLink, os){
     //create the main container card
     let card = document.createElement('div');
     card.className = 'cards';
+    card.id = counter;
+    counter++;
 
     // FIRST SECTION OF THE CARD =======================================================================================================
     //create the github link from vercel API
@@ -125,6 +163,8 @@ function generateCardContent(rootElement, repoTitle, repoDescDetail, techUsed, g
 
     //append the card to the root main element
     rootElement.appendChild(card);
+
+    return card;
 }
 
 //root element
@@ -177,59 +217,92 @@ arrayOfSvg.push(
 
 //generate card content by calling the generateCardContent function
 // LIVE CHAT GITHUB REPO CONTENT ====================================================================================================
-generateCardContent(
-    cardContainer,
-    'Live Chat Web App',
-    'Multi user web chat that support feature like send voice message, photos, and many more.',
-    arrayOfSvg,
-    'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Live-Chat-Web&theme=radical',
-    'https://github.com/Fredo-Ronan/Live-Chat-Web',
-    'Windows, Linux, MacOS'
+arrayOfRepositories.push(
+    new GithubRepos(
+        'Live Chat Web App',
+        arrayOfSvg,
+        'Stable',
+        generateCardContent(
+            cardContainer,
+            'Live Chat Web App',
+            'Multi user web chat that support feature like send voice message, photos, and many more.',
+            arrayOfSvg,
+            'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Live-Chat-Web&theme=radical',
+            'https://github.com/Fredo-Ronan/Live-Chat-Web',
+            'Windows, Linux, MacOS'
+        )
+    )
 );
+
 
 //clear the array of svg
 arrayOfSvg = [];
 
 arrayOfSvg.push(
     `<svg viewBox="0 0 128 128">
+    <title>C Programming Language</title>
     <path fill="var(--c-logo-svg-color)" d="M117.5 33.5l.3-.2c-.6-1.1-1.5-2.1-2.4-2.6L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.3.9 3.4l-.2.1c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c.1-.8 0-1.7-.4-2.6zM64 88.5c9.1 0 17.1-5 21.3-12.4l12.9 7.6c-6.8 11.8-19.6 19.8-34.2 19.8-21.8 0-39.5-17.7-39.5-39.5S42.2 24.5 64 24.5c14.7 0 27.5 8.1 34.3 20l-13 7.5C81.1 44.5 73.1 39.5 64 39.5c-13.5 0-24.5 11-24.5 24.5s11 24.5 24.5 24.5z"></path>
     </svg>`
 );
 
 //SNAKE GAME GITHUB REPO CONTENT ====================================================================================================
-generateCardContent(
-    cardContainer,
-    'Snake Game in C',
-    'Snake game that made without using graphics.h C library.',
-    arrayOfSvg,
-    'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Snake-Game-Console-without-graphics.h&theme=radical',
-    'https://github.com/Fredo-Ronan/Snake-Game-Console-without-graphics.h',
-    'Windows'
+arrayOfRepositories.push(
+    new GithubRepos(
+        'Snake Game in C',
+        arrayOfSvg,
+        'Stable',
+        generateCardContent(
+            cardContainer,
+            'Snake Game in C',
+            'Snake game that made without using graphics.h C library.',
+            arrayOfSvg,
+            'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Snake-Game-Console-without-graphics.h&theme=radical',
+            'https://github.com/Fredo-Ronan/Snake-Game-Console-without-graphics.h',
+            'Windows'
+        )
+    )
 );
+
 
 // JAWA LANG GITHUB REPO CONTENT ====================================================================================================
-generateCardContent(
-    cardContainer,
-    'Jawa Lang <h4 style="font-size: 15px; display: inline; font-style: italic; opacity: 0.8;">(Under development)</h4>',
-    `Just for fun project creating the new programming language inspire by Javanese Language or "Bahasa Jawa" for the syntax of
-    this programming language.
-    `,
-    arrayOfSvg,
-    'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Jawa-lang&theme=radical',
-    'https://github.com/Fredo-Ronan/Jawa-lang',
-    'Windows'
-);
+arrayOfRepositories.push(
+    new GithubRepos(
+        'Jawa Lang',
+        arrayOfSvg,
+        'Under Development',
+        generateCardContent(
+            cardContainer,
+            'Jawa Lang <h4 style="font-size: 15px; display: inline; font-style: italic; opacity: 0.8;">(Under development)</h4>',
+            `Just for fun project creating the new programming language inspire by Javanese Language or "Bahasa Jawa" for the syntax of
+            this programming language.
+            `,
+            arrayOfSvg,
+            'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Jawa-lang&theme=radical',
+            'https://github.com/Fredo-Ronan/Jawa-lang',
+            'Windows'
+        )
+    )
+)
+
 
 // C HEADER FILE COLLECTION GITHUB REPO CONTENT ====================================================================================================
-generateCardContent(
-    cardContainer,
-    'C Header File Collections',
-    `Collection of .h files or C library header files that i've made to solve certain purposes.`,
-    arrayOfSvg,
-    'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=C_Header_Files_Collection&theme=radical',
-    'https://github.com/Fredo-Ronan/C_Header_Files_Collection',
-    'Windows, Linux'
-);
+arrayOfRepositories.push(
+    new GithubRepos(
+        'C Header File Collection',
+        arrayOfSvg,
+        'Stable',
+        generateCardContent(
+            cardContainer,
+            'C Header File Collections',
+            `Collection of .h files or C library header files that i've made to solve certain purposes.`,
+            arrayOfSvg,
+            'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=C_Header_Files_Collection&theme=radical',
+            'https://github.com/Fredo-Ronan/C_Header_Files_Collection',
+            'Windows, Linux'
+        )
+    )
+)
+
 
 arrayOfSvg = [];
 
@@ -255,17 +328,25 @@ arrayOfSvg.push(
 );
 
 // DISTRO BAJU BIG JAVA PROJECT GITHUB REPO CONTENT (USER SIDE) ========================================================================================
-generateCardContent(
-    cardContainer,
-    'Distro Baju Desktop App',
-    `This repository is for the big java project of my course at the college. This project is about an e-commerce of a 
-    clothes store.
-    `,
-    arrayOfSvg,
-    'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=DistroBaju-UserSide&theme=radical',
-    'https://github.com/Fredo-Ronan/DistroBaju-UserSide',
-    'Windows'
-);
+arrayOfRepositories.push(
+    new GithubRepos(
+        'Distro Baju Desktop App',
+        arrayOfSvg,
+        'Stable',
+        generateCardContent(
+            cardContainer,
+            'Distro Baju Desktop App',
+            `This repository is for the big java project of my course at the college. This project is about an e-commerce of a 
+            clothes store.
+            `,
+            arrayOfSvg,
+            'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=DistroBaju-UserSide&theme=radical',
+            'https://github.com/Fredo-Ronan/DistroBaju-UserSide',
+            'Windows'
+        )
+    )
+)
+
 
 arrayOfSvg = [];
 
@@ -282,17 +363,25 @@ arrayOfSvg.push(
 );
 
 // JAVA CLASS UTILITES GITHUB REPO CONTENT ====================================================================================================
-generateCardContent(
-    cardContainer,
-    'Java Class Utilities',
-    `Collection of my custom made Java Class to solve particular problem define by the class name by using the methods
-    available in a certain class.
-    `,
-    arrayOfSvg,
-    'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Java-Class-Utilities&theme=radical',
-    'https://github.com/Fredo-Ronan/Java-Class-Utilities',
-    'Windows'
-);
+arrayOfRepositories.push(
+    new GithubRepos(
+        'Java Class Utilities',
+        arrayOfSvg,
+        'Stable',
+        generateCardContent(
+            cardContainer,
+            'Java Class Utilities',
+            `Collection of my custom made Java Class to solve particular problem define by the class name by using the methods
+            available in a certain class.
+            `,
+            arrayOfSvg,
+            'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Java-Class-Utilities&theme=radical',
+            'https://github.com/Fredo-Ronan/Java-Class-Utilities',
+            'Windows'
+        )
+    )
+)
+
 
 arrayOfSvg = [];
 
@@ -306,16 +395,25 @@ arrayOfSvg.push(
 </svg>`
 );
 
-generateCardContent(
-    cardContainer,
-    'Custom Bash Script',
-    `Collection of my custom made bash script or shell script to automatically run particular operation on Linux Operating System.
-    `,
-    arrayOfSvg,
-    'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Custom-Bash-Scripts&theme=radical',
-    'https://github.com/Fredo-Ronan/Custom-Bash-Scripts',
-    'Linux'
-);
+arrayOfRepositories.push(
+    new GithubRepos(
+        'Custom Bash Script',
+        arrayOfSvg,
+        'Stable',
+        generateCardContent(
+            cardContainer,
+            'Custom Bash Script',
+            `Collection of my custom made bash script or shell script to automatically run particular operation on Linux Operating System.
+            `,
+            arrayOfSvg,
+            'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Custom-Bash-Scripts&theme=radical',
+            'https://github.com/Fredo-Ronan/Custom-Bash-Scripts',
+            'Linux'
+        )
+    )
+)
+
+
 
 arrayOfSvg = [];
 
@@ -339,13 +437,42 @@ arrayOfSvg.push(
 </svg>`
 );
 
-generateCardContent(
-    cardContainer,
-    'Windows Automation Script',
-    `Collection of my custom made batch script and powershell script to run particular operation automatically on Windows Operating System.
-    `,
-    arrayOfSvg,
-    'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Windows-Script-Automation&theme=radical',
-    'https://github.com/Fredo-Ronan/Windows-Script-Automation',
-    'Windows'
-);
+arrayOfRepositories.push(
+    new GithubRepos(
+        'Windows Automation Script',
+        arrayOfSvg,
+        'Stable',
+        generateCardContent(
+            cardContainer,
+            'Windows Automation Script',
+            `Collection of my custom made batch script and powershell script to run particular operation automatically on Windows Operating System.
+            `,
+            arrayOfSvg,
+            'https://github-readme-stats.vercel.app/api/pin/?username=Fredo-Ronan&repo=Windows-Script-Automation&theme=radical',
+            'https://github.com/Fredo-Ronan/Windows-Script-Automation',
+            'Windows'
+        )
+    )
+)
+
+
+// HANDLE THE SEARCH MECHANISM ========================================================================================
+const searchInput = document.querySelector('.search-text');
+
+searchInput.addEventListener('input', e => {
+    const value = e.target.value.toLowerCase();
+    arrayOfRepositories.forEach(repository => {
+        const isFound = repository.getRepoName().toString().toLowerCase().includes(value) || 
+                        repository.getTechUsed().toString().toLowerCase().includes(value) ||
+                        repository.getStatus().toString().toLowerCase().includes(value);
+        repository.getHTMLElement().classList.toggle('hide', !isFound);
+    })
+})
+
+
+// DO NOT USE THIS ====================================================================================================
+// fetch("https://api.github.com/users/Fredo-Ronan/repos?").then(res => res.json()).then(data => {
+//     data.forEach(element => {
+//         console.log(element);
+//     })
+// })

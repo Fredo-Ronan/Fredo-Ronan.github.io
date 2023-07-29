@@ -38,4 +38,9 @@
     .cards-container .cards p {
         font-size: 15px;
     }
+
+    .search-text {
+        font-size: 15px;
+        width: 80%;
+    }
 }

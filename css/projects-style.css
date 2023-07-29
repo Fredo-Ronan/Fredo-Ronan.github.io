@@ -7,7 +7,7 @@
     color: var(--main-text-color);
 }
 
-.opening-text .title {
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
     font-weight: bold;
 }
 
-.opening-text .description {
+.description {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,6 +40,7 @@
 .cards-container .cards {
     position: relative;
     max-width: 600px;
+    /* height: 65rem; */
     background-color: var(--section-genap-color);
     padding: 30px;
     padding-bottom: 4rem;
@@ -153,6 +154,11 @@
 .accordion-content {
     padding: 1rem;
     border-top: 1px solid var(--border-top-accordion-content-color);
+}
+
+.tech-used-text {
+    font-size: 18px;
+    padding-top: 1rem;
 }
 
 li {

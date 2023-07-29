@@ -1,6 +1,6 @@
 
 
-function generateCardContent(rootElement, repoTitle, techUsed, githubRepoLink, os, accordionArray){
+function generateCardContent(rootElement, repoTitle, techUsed, githubRepoLink, os, accordionArray, demoImage, customWidthDemoImage){
     //create the main container card
     let card = document.createElement('div');
     card.className = 'cards show';
@@ -8,10 +8,30 @@ function generateCardContent(rootElement, repoTitle, techUsed, githubRepoLink, o
     // FIRST SECTION OF THE CARD =======================================================================================================
     //create img container for demo of the project
     let demoImg = document.createElement('img');
-    demoImg.src = '/assets/live-chat-demo.png';
+    demoImg.src = demoImage;
 
-    //append the img container element for the demo image to the card element
-    card.appendChild(demoImg);
+    //check if there is a custom width to the demoImage or not 
+    //(fill 'NULL' if you don't want custom width | fill number including the format eg. px/vh/rem/etc...)
+    if(customWidthDemoImage !== 'NULL'){
+        //if it's not contains 'NULL' it's mean that there is a custom width specified for the current demoImage
+
+        //create demoImageWrapper by div element to wrap the img element
+        let demoImageWrapper = document.createElement('div');
+        demoImageWrapper.style.width = '100%'; //set the width of the wrapper to 100% to fill all the space
+        demoImageWrapper.style.overflow = 'hidden'; //set the overflow to hidden to hide the overflow happen when scale up the image
+
+        demoImg.style.transformOrigin = 'top left'; //set the demo image transform origin to top left in order to make the center of transformation
+        demoImg.style.scale = customWidthDemoImage; //set the scale from parameter
+        demoImg.style.objectFit = 'cover'; //set the object-fit to cover to make the image not stretched
+
+        demoImageWrapper.appendChild(demoImg); //append the image to he demoImageWrapper
+
+        card.appendChild(demoImageWrapper);//append the demoImageWrapper to the main card container
+    } else {
+        //append the img container element for the demo image to the card element
+        card.appendChild(demoImg);
+    }
+    
 
     // SECOND SECTION OF THE CARD =======================================================================================================
     //create the main repository description container
@@ -115,9 +135,8 @@ function generateCardContent(rootElement, repoTitle, techUsed, githubRepoLink, o
 
     //create the 'Tech Used' word
     let p = document.createElement('p');
+    p.className = 'tech-used-text';
     p.innerHTML = 'Technology Used in this project : ';
-    p.style.fontSize = '18px';
-    p.style.paddingTop = '1rem';
 
     //append the p element to the techContainer
     techContainer.appendChild(p);
@@ -160,8 +179,9 @@ function generateCardContent(rootElement, repoTitle, techUsed, githubRepoLink, o
     rootElement.appendChild(card);
 }
 
-//ROOT ELEMENT
+//ROOT ELEMENTS
 let mainCardsContainer = document.getElementById('cards-container');
+let mainUpcomingCardsContainer = document.getElementById('cards-upcoming-container');
 
 //class Accordion to make the accordion object for detail in the form of accordion that can be open and close by user
 /*
@@ -250,6 +270,7 @@ arrayOfAccordionForDetail.push(
             <li>Voice Note Message</li>
             <li>Send Photo (Realtime using camera or taken from galery)</li>
             <li>Send Links (Anything that contains 'https://' are become clickable when it's send)</li>
+            <li>Dark Mode</li>
         </ul>
         `
     )
@@ -257,11 +278,151 @@ arrayOfAccordionForDetail.push(
 
 
 //generate the content by calling this function
+// LIVE CHAT WEB APP CONTENT
 generateCardContent(
     mainCardsContainer,
     'Live Chat Web App',
     arrayOfSvg,
     'https://github.com/Fredo-Ronan/Live-Chat-Web',
     'Windows, Linux, MacOS',
-    arrayOfAccordionForDetail
+    arrayOfAccordionForDetail,
+    '/assets/live-chat-demo.png',
+    'NULL'
+);
+
+arrayOfAccordionForDetail = [];
+arrayOfSvg = [];
+
+// SNAKE GAME IN C CONTENT
+
+arrayOfSvg.push(
+    `<svg viewBox="0 0 128 128">
+    <path fill="var(--c-logo-svg-color)" d="M117.5 33.5l.3-.2c-.6-1.1-1.5-2.1-2.4-2.6L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.3.9 3.4l-.2.1c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c.1-.8 0-1.7-.4-2.6zM64 88.5c9.1 0 17.1-5 21.3-12.4l12.9 7.6c-6.8 11.8-19.6 19.8-34.2 19.8-21.8 0-39.5-17.7-39.5-39.5S42.2 24.5 64 24.5c14.7 0 27.5 8.1 34.3 20l-13 7.5C81.1 44.5 73.1 39.5 64 39.5c-13.5 0-24.5 11-24.5 24.5s11 24.5 24.5 24.5z"></path>
+    </svg>`
+);
+
+arrayOfAccordionForDetail.push(
+    new Accordion(
+        `What is the different?`,
+        `This snake game is build with C programming language. Usually when making snake game in C, some programmers are using
+        library that can be use to render the graphic called graphics.h OR graphic library header file for C language. But in this project
+        snake game was build without using any kind of graphic library including graphics.h from the C language library itself.
+        `
+    )
+);
+
+arrayOfAccordionForDetail.push(
+    new Accordion(
+        `How it works?`,
+        `Since this snake game was build without using graphics.h library, the visual was made by pure array of characters that later will be
+        visit 1 by 1 and show it on the screen each of index that being visited using nested for loop. 
+        There are several array of character. One of them is array of characters that contains character that will be use for the arena
+        for the snake to run. 
+        `
+    )
+)
+
+arrayOfAccordionForDetail.push(
+    new Accordion(
+        `What are the features?`,
+        `<ul style="padding-left: 10px;">
+            <li>Pause the game while playing it</li>
+            <li>
+                Store the history of the players that ever play this snake game
+                <img src="https://user-images.githubusercontent.com/128687596/229768005-349115bc-96f0-427f-b281-7ac2c36b373e.png" style="width: 80%;">
+            </li>
+            <li>Persistence of the history data by taking advantage of a text file created automatically</li>
+        </ul>
+        `
+    )
+);
+
+generateCardContent(
+    mainCardsContainer,
+    'Snake Game in C',
+    arrayOfSvg,
+    'https://github.com/Fredo-Ronan/Snake-Game-Console-without-graphics.h',
+    'Windows',
+    arrayOfAccordionForDetail,
+    'https://user-images.githubusercontent.com/128687596/230856656-8397bdf4-502c-4c4e-92d4-87ffca699512.gif',
+    '1.4'
+);
+
+arrayOfAccordionForDetail = [];
+arrayOfSvg = [];
+
+// UPCOMING PROJECT CONTENT SIDE ===============================================================================================
+arrayOfSvg.push(
+    `<svg viewBox="0 0 128 128">
+    <path fill="var(--c-logo-svg-color)" d="M117.5 33.5l.3-.2c-.6-1.1-1.5-2.1-2.4-2.6L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.3.9 3.4l-.2.1c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c.1-.8 0-1.7-.4-2.6zM64 88.5c9.1 0 17.1-5 21.3-12.4l12.9 7.6c-6.8 11.8-19.6 19.8-34.2 19.8-21.8 0-39.5-17.7-39.5-39.5S42.2 24.5 64 24.5c14.7 0 27.5 8.1 34.3 20l-13 7.5C81.1 44.5 73.1 39.5 64 39.5c-13.5 0-24.5 11-24.5 24.5s11 24.5 24.5 24.5z"></path>
+    </svg>`
+);
+
+arrayOfAccordionForDetail.push(
+    new Accordion(
+        `What is this project about?`,
+        `This project is just a fun project to create new programming language insipre by Javanese language OR "Bahasa Jawa"
+        in one of million culture exists in Indonesia.
+        `
+    )
+);
+
+arrayOfAccordionForDetail.push(
+    new Accordion(
+        `How it works?`,
+        `The source code must be in the format of .jawa for the file extension ({fileName}.jawa).<br><br> 
+        This programming language get executed
+        with the kind of interpreter method like Python programming language. So, the interpreter will parse the .jawa source code file
+        and convert it to C language.<br><br> 
+        After converting to C language, gcc compiler get invoke to compile that converted C source code
+        into .exe format that windows can execute it imediately. All of this process runs automatically.
+        `
+    )
+);
+
+arrayOfAccordionForDetail.push(
+    new Accordion(
+        `What are the rules?`,
+        `<ul style="padding-left: 10px;">
+            <li>Each statement or operation terminate with (.) period sign</li>
+            <li>Automatically add new lines characters '\\n' after (.) period sign</li>
+            <li>If you don't want the new line characters just add 'noEnter' flag after period sign on the end of a statement</li>
+            <li>No data types, it's almost dynamically interpret the data type by looking the data you want to store to variable</li>
+        </ul>
+        `
+    )
+);
+
+arrayOfAccordionForDetail.push(
+    new Accordion(
+        `How to executed it?`,
+        `The source code of this new programming language store in a text file with the extension .jawa ({fileName}.jawa).<br><br>
+        After finished to write the jawa source code, the user/programmer just type in the 'jawa.exe' command on CMD (Command Prompt)
+        follow with the source code file name and then press ENTER.<br><br> 
+        After that, the result should be imediately appear as a windows console
+        application.
+        `
+    )
+);
+
+arrayOfAccordionForDetail.push(
+    new Accordion(
+        `What are being develop?`,
+        `<ul style="padding-left: 10px;">
+            <li>If, else if, and else kind of operation</li>
+            <li>Also not forget about continously doing bug fixes even during adding more features</li>
+        </ul>
+        `
+    )
+);
+
+generateCardContent(
+    mainUpcomingCardsContainer,
+    'Jawa Lang',
+    arrayOfSvg,
+    'https://github.com/Fredo-Ronan/Jawa-lang',
+    'Windows',
+    arrayOfAccordionForDetail,
+    '',
+    'NULL'
 );
