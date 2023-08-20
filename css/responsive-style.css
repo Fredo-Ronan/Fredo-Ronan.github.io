@@ -2,7 +2,7 @@
 /* HANDLE RESPONSIVE SIDE */
 
 /* ukuran tablet */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
 
     header nav {
         width: 100vw;
