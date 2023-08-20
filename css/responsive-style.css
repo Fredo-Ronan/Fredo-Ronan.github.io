@@ -42,6 +42,14 @@
     .scrollCommand p {
         padding-top: 1rem;
     }
+
+
+    /* read more btn side */
+    .read-more-btn-link {
+        -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+    }
+    /* end of read more btn side */
 }
 
 
