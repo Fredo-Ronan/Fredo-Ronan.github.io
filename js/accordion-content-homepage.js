@@ -3,6 +3,7 @@ function generateCardContent(rootElement, repoTitle, techUsed, githubRepoLink, o
     //create the main container card
     let card = document.createElement('div');
     card.className = 'cards';
+    card.style.marginTop = '4rem';
 
     // FIRST SECTION OF THE CARD =======================================================================================================
     //create img container for demo of the project
@@ -275,6 +276,38 @@ generateCardContent(
     `RSA Encryption Demo Website`,
     arrayOfSvg,
     `https://fredo006.github.io/RSAEncryption/RSAEncryption.html`,
+    `Windows, Linux, MacOS`,
+    arrayOfAccordion,
+    '',
+    'NULL'
+)
+
+
+// Voice Calculator Content Side
+arrayOfAccordion = [];
+
+arrayOfAccordion.push(
+    new Accordion(
+        `What is this?`,
+        `This is a fun and experimental project of making calculator website that use voice recognition API from the web browser
+        for the prompt.`
+    )
+)
+
+arrayOfAccordion.push(
+    new Accordion(
+        `How to use it?`,
+        `Simply go to the website and press 'Mulai Bicara' button and start talking some calculation prompt.
+        After done giving the prompt by talking, it will be automatically process and give the output after a while depend on the 
+        internet connection.`
+    )
+)
+
+generateCardContent(
+    littleFunProject,
+    `Voice Calculator`,
+    arrayOfSvg,
+    `https://fredo006.github.io/KalkulatorSuara/VoiceCalculator.html`,
     `Windows, Linux, MacOS`,
     arrayOfAccordion,
     '',
