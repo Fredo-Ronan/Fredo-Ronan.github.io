@@ -167,6 +167,7 @@ function generateCardContent(rootElement, repoTitle, techUsed, githubRepoLink, o
     aLinkToProject.className = 'read-more-btn-link';
     aLinkToProject.style.paddingLeft = '8px';
     aLinkToProject.innerHTML = 'See the code&nbsp;&nbsp;&nbsp;↗';
+    aLinkToProject.target = '_blank';
 
     //append the link to project anchor tag to the main description container
     descriptionContainer.appendChild(aLinkToProject);

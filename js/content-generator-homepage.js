@@ -115,6 +115,8 @@ function generateProjectContent(rootElement, projectTitle, projectDetailDescript
     rootElement.appendChild(projectContainer);
 }
 
+
+
 // HANDLE SECOND CONTENT OF THE HIGHLIGHTED PROJECT PAGE
 let secondContent = document.getElementById('second-highlighted-project');
 let arrayOfSvg = [];
