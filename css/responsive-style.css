@@ -354,6 +354,10 @@
     .tech-used-container svg {
         width: 25%;
     }
+
+    .section-description {
+        font-size: 15px;
+    }
     /* end of first highlighted project side */
 
     /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -370,9 +374,37 @@
 
 
     /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-    /* Tech Used Accordion Side */
+    /* Accordion Side */
+    .cards {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .center-demoImg {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .demo-img {
+        width: 100%;
+        transform-origin: top;
+        scale: 1.5;
+    }
+
+    .accordion-title {
+        font-size: 15px;
+    }
+
+    .accordion-content {
+        font-size: 12px;
+    }
+
+    .tech-used-text {
+        font-size: 15px;
+    }
+
     .logo-container svg {
-        width: 10%;
+        width: 18%;
     }
 
 

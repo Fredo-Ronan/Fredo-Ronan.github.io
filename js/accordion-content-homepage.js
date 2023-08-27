@@ -9,6 +9,7 @@ function generateCardContent(rootElement, repoTitle, techUsed, githubRepoLink, o
     //create img container for demo of the project
     let demoImg = document.createElement('img');
     demoImg.src = demoImage;
+    demoImg.className = 'demo-img';
 
     //check if there is a custom width to the demoImage or not 
     //(fill 'NULL' if you don't want custom width | fill number including the format eg. px/vh/rem/etc...)
@@ -28,8 +29,13 @@ function generateCardContent(rootElement, repoTitle, techUsed, githubRepoLink, o
 
         card.appendChild(demoImageWrapper);//append the demoImageWrapper to the main card container
     } else {
+
+        let centerTag = document.createElement('div');
+        centerTag.className = 'center-demoImg';
+        centerTag.appendChild(demoImg)
+
         //append the img container element for the demo image to the card element
-        card.appendChild(demoImg);
+        card.appendChild(centerTag);
     }
     
 
@@ -278,7 +284,7 @@ generateCardContent(
     `https://fredo006.github.io/RSAEncryption/RSAEncryption.html`,
     `Windows, Linux, MacOS`,
     arrayOfAccordion,
-    '',
+    '/assets/RSAEncrypt_Demo.png',
     'NULL'
 )
 
@@ -310,6 +316,6 @@ generateCardContent(
     `https://fredo006.github.io/KalkulatorSuara/VoiceCalculator.html`,
     `Windows, Linux, MacOS`,
     arrayOfAccordion,
-    '',
+    '/assets/kalkulatorSuaraDemo.png',
     'NULL'
 )

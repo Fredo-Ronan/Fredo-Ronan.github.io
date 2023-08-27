@@ -34,6 +34,7 @@ let highlightedProjects = document.querySelectorAll('.projects-section .title');
 
 let projectDescription = document.querySelectorAll('.project-description');
 let projectDescriptionRight = document.querySelectorAll('.project-description .right');
+let sectionDescription = document.querySelectorAll('.section-description');
 
 let projectPreviewImage = document.querySelectorAll('.demo-images-wrapper');
 let projectPreviewImageLeft = document.querySelectorAll('.demo-images-wrapper .left');
@@ -42,6 +43,7 @@ highlightedProjects.forEach(element => observer.observe(element));
 
 projectDescriptionRight.forEach(element => observer.observe(element));
 projectPreviewImageLeft.forEach(element => observer.observe(element));
+sectionDescription.forEach(element => observer.observe(element));
 
 projectDescription.forEach(element => observer.observe(element));
 projectPreviewImage.forEach(element => observer.observe(element));
