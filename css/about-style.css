@@ -111,3 +111,24 @@
 .hover-prompt.show {
     opacity: 1;
 }
+
+.hover-prompt.spotify {
+    opacity: 1;
+}
+
+.section-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--introduce-font);
+    font-size: 20px;
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.section-description.show {
+    transform: translateY(0);
+    opacity: 1;
+}
