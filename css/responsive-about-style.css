@@ -50,4 +50,8 @@
     .section-description.show {
         font-size: 14px;
     }
+
+    .logo-container svg {
+        width: 100%;
+    }
 }
