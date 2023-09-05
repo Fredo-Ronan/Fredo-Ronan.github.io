@@ -197,6 +197,7 @@ svgOfTools.push(
 
 generateToolsLearning(currentLearning, svgOfTools);
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Tech Stack/Things that i can content side
 let skillsContainer = document.getElementById('skills-container');
 
