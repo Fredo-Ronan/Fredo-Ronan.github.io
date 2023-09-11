@@ -219,7 +219,7 @@ class Accordion {
 let arrayOfAccordion = [];
 arrayOfSvg = [];
 
-let littleFunProject = document.getElementById('fun-projects');
+let littleFunProject = document.getElementById('fun-projects-container');
 
 
 // Weather API BMKG Service Content
