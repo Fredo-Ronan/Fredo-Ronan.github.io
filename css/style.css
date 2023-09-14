@@ -69,6 +69,7 @@ body {
     --jquery-logo-color: #131B28;
     --tailwind-logo-color: #2d3748;
     --next-js-logo-color: black;
+    --kotlin-logo-color: black;
 }
 
 body.dark {
@@ -116,6 +117,7 @@ body.dark {
     --jquery-logo-color: #ffffff;
     --tailwind-logo-color: #ffffff;
     --next-js-logo-color: rgb(255, 255, 255);
+    --kotlin-logo-color: white;
 }
 
 /* header side */
