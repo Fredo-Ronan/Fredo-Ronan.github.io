@@ -320,6 +320,7 @@
     justify-content: center;
     align-items: center;
     font-family: var(--introduce-font);
+    color: var(--main-text-color);
     font-size: 20px;
     text-align: center;
     transform: translateY(20px);
