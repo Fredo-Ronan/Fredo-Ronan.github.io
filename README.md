@@ -1,4 +1,5 @@
 # Fredo-Ronan.github.io
+![](https://github.com/Fredo-Ronan/Fredo-Ronan.github.io/actions/workflows/pages/pages-build-deployment/badge.svg) <br>
 For my portfolio website repository
 
 ## Litle Fun Fact
