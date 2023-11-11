@@ -8,6 +8,18 @@ function generateFooter(rootElement, text) {
     footerContainer.innerHTML = text;
 
     rootElement.appendChild(footerContainer);
+
+    // visitors side
+    let visitorsContainer = document.createElement('div');
+    visitorsContainer.className = 'visitor-container';
+    visitorsContainer.style.marginTop = '1rem';
+
+    let imgVisitor = document.createElement('img');
+    imgVisitor.src = 'https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ffredo-ronan.github.io%2Findex.html&countColor=%23263759';
+
+    visitorsContainer.appendChild(imgVisitor);
+
+    rootElement.appendChild(visitorsContainer);
 }
 
 let footer = document.getElementById('footer');
