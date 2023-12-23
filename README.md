@@ -7,3 +7,6 @@ This website build with 95% pure CSS for the styling. I use Tailwind CSS little 
 
 ## Tambahan
 Keterangan dari tambahan ini adalah disini. Bla bla bla bla
+
+## INi adalah tamabahan dari GITHUB
+Ini adalah pura puranya orang lain yang mengubahnya
