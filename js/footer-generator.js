@@ -24,4 +24,4 @@ function generateFooter(rootElement, text) {
 
 let footer = document.getElementById('footer');
 
-generateFooter(footer, 'Copyright © 2023 Fredo Ronan. All right reserved');
+generateFooter(footer, 'Copyright © 2024 Fredo Ronan. All right reserved');
