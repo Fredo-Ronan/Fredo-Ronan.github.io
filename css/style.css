@@ -70,6 +70,7 @@ body {
     --tailwind-logo-color: #2d3748;
     --next-js-logo-color: black;
     --kotlin-logo-color: black;
+    --unity-logo-color: black;
 }
 
 body.dark {
@@ -118,6 +119,7 @@ body.dark {
     --tailwind-logo-color: #ffffff;
     --next-js-logo-color: rgb(255, 255, 255);
     --kotlin-logo-color: white;
+    --unity-logo-color: white;
 }
 
 /* header side */
