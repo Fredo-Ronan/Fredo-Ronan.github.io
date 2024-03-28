@@ -19,3 +19,15 @@ hoverPrompt.forEach(element => observer.observe(element));
 logos.forEach(element => observer.observe(element));
 category.forEach(element => observer.observe(element));
 sectionDescription.forEach(element => observer.observe(element));
+
+const activities_element = document.querySelector('.activities');
+
+//handle screen size change
+$(window).resize(function() {
+    //resize just happened, pixels changed
+    if(window.innerHeight < 1000 && window.innerWidth < 500) {
+        activities_element.setAttribute('weeks', '20');
+    } else {
+        activities_element.setAttribute('weeks', '52');
+    }
+});
