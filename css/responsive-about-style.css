@@ -54,4 +54,22 @@
     .logo-container svg {
         width: 100%;
     }
+
+    .introduceText {
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .introduce {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .activities-container {
+        padding: 2rem;
+    }
+
+    .all-skills-container {
+        padding: 2rem;
+    }
 }

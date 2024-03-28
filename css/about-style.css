@@ -132,3 +132,22 @@
     transform: translateY(0);
     opacity: 1;
 }
+
+.introduceText {
+    max-width: 60%;
+    text-align: justify;
+}
+
+.activities-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.all-skills-container {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}

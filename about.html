@@ -81,6 +81,9 @@
                     temporary from my main interest as i mentioned before.
                 </p>
             </div>
+            <div style="width: 100%; display: flex; align-items: center;">
+                <codersrank-summary username="fredo-ronan" branding="false"></codersrank-summary>
+            </div>
         </div>
 
         <div class="read-more-btn-wrapper" style="display: flex; justify-content: center; padding-bottom: 5rem;">
@@ -90,9 +93,30 @@
         </div>
     </div>
 
+    <div class="genap-section">
+        <div class="activities-container">
+            <h3 class="headline">My Recent Activities Summary on Github 🙇‍♂️</h3>
+            <codersrank-activity username="fredo-ronan" labels legend tooltip branding="false"></codersrank-activity>
+        </div>
+    </div>
+
+
+    <div class="ganjil-section" id="second-content">
+        <div class="all-skills-container">
+            <h3 class="headline" style="text-align: center;">Programming Languages that i've ever built with 🧑‍💻</h3>
+            <codersrank-skills-chart
+            username="fredo-ronan"
+            labels
+            legend
+            tooltip
+            branding="false"
+            ></codersrank-skills-chart>
+        </div>
+    </div>
+
 
     <!-- second content side -->
-    <div class="genap-section" id="second-content">
+    <div class="genap-section">
         <div class="skills-container" id="skills-container">
             <h3 class="headline">Things that i can📚</h3>
             <p class="hover-prompt">Hover them to see the detail....</p>
@@ -135,6 +159,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/@codersrank/activity@0.9.14/codersrank-activity.min.js"></script>
+    <script src="https://unpkg.com/@codersrank/skills-chart@0.9.21/codersrank-skills-chart.min.js"></script>
+    <script src="https://unpkg.com/@codersrank/summary@0.9.13/codersrank-summary.min.js"></script>
     <!-- end of CDN javascript library import -->
 
     <!-- Main functional script things -->

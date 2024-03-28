@@ -27,7 +27,7 @@ let hoverPrompt = document.querySelector('.tech-stack-section .hover-prompt');
 let techLogos = document.querySelectorAll('.tech-stack-logos svg');
 
 observer.observe(techStackTitle);
-observer.observe(hoverPrompt);
+// observer.observe(hoverPrompt);
 techLogos.forEach(element => observerTechLogos.observe(element));
 
 let highlightedProjects = document.querySelectorAll('.projects-section .title');

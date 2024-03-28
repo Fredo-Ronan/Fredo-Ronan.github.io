@@ -446,3 +446,12 @@ li {
 .logo-container svg {
     width: 15%;
 }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* CODERSRANK HIGHLIGHTED SKILLS STYLING */
+.profile-codersrank {
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+    padding-left: 10rem; 
+    padding-right: 10rem;
+}
