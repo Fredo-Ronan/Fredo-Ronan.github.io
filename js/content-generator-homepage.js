@@ -147,7 +147,8 @@ generateProjectContent(
     `Fredo Downloader <i style="font-size: 20px;">(Under Development)</i>`, 
     `This is my own app that can download instagram reels and youtube. But the youtube download is still under development and that's why
     on the title says it's <i>(Under Development)</i>. But the instagram download functionality is already in stable stage and you can go
-    to the release page on my github at version 1.0.0 release tag and download the APK file.<br><br>
+    to the release page on my github at version 1.0.0 release tag and download the APK file. You can actually try the Youtube download
+    functionality directly from the source code or from the pre-release version 1.6.0 page, but it still support only on Windows OS.<br><br>
     Features : <strong>Download Instagram Reels</strong><br><br>
     Technology used : <br>
     `,
