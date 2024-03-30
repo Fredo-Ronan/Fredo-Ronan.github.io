@@ -1,93 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/darkMode-toggle-style.css">
-    <link rel="stylesheet" href="css/base-content-style.css">
-    <link rel="stylesheet" href="css/github-style.css">
-    <link rel="stylesheet" href="css/keyframes.css">
-    <link rel="stylesheet" href="css/responsive-style.css">
-    <link rel="stylesheet" href="css/responsive-github-style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/darkMode-toggle-style.css" />
+    <link rel="stylesheet" href="css/base-content-style.css" />
+    <link rel="stylesheet" href="css/github-style.css" />
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="css/responsive-style.css" />
+    <link rel="stylesheet" href="css/responsive-github-style.css" />
 
     <!-- icon file import -->
-    <link rel="icon" type="image/x-icon" href="assets/LogoIcon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/LogoIcon.ico" />
     <!-- end of icon file import -->
 
     <title>Fredo Ronan | Github</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header side -->
     <header>
-        <nav>
-            <div class="logoText" id="logoText" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);">Fredo Ronan</div>
+      <nav>
+        <div
+          class="logoText"
+          id="logoText"
+          style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
+        >
+          Fredo Ronan
+        </div>
 
-            <ul>
-                <li><a href="/index.html" class="navbar-links">Home</a></li>
-                <li><a href="/projects.html" class="navbar-links">Projects</a></li>
-                <li><a href="/github.html" class="navbar-links active">Github</a></li>
-                <li><a href="/about.html" class="navbar-links">About</a></li>
-                <li><a href="/404.html" class="navbar-links">Contact</a></li>
-            </ul>
+        <ul>
+          <li><a href="/index.html" class="navbar-links">Home</a></li>
+          <li><a href="/projects.html" class="navbar-links">Projects</a></li>
+          <li><a href="/github.html" class="navbar-links active">Github</a></li>
+          <li><a href="/about.html" class="navbar-links">About</a></li>
+          <li><a href="/404.html" class="navbar-links">Contact</a></li>
+        </ul>
 
-            <div class="darkModeToggle">
-                <input type="checkbox" id="toggle-dark">
-                <label for="toggle-dark" class="toggle-dark-mode">
-                    <svg width="800px" class="sun" height="800px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M861 656.7l144.6-144.6L861 367.6V163.1H656.6L512 18.6 367.4 163.1H163v204.5L18.4 512.1 163 656.7v204.4h204.4L512 1005.7l144.6-144.6H861z" fill="#FCD170" /><path d="M512 1015.7c-2.6 0-5.1-1-7.1-2.9L363.3 871.1H163c-5.5 0-10-4.5-10-10V660.8L11.4 519.2c-1.9-1.9-2.9-4.4-2.9-7.1 0-2.7 1.1-5.2 2.9-7.1L153 363.4V163.1c0-5.5 4.5-10 10-10h200.3L504.9 11.5c1.9-1.9 4.4-2.9 7.1-2.9s5.2 1.1 7.1 2.9l141.6 141.6H861c5.5 0 10 4.5 10 10v200.3L1012.6 505c1.9 1.9 2.9 4.4 2.9 7.1 0 2.7-1.1 5.2-2.9 7.1L871 660.8v200.3c0 5.5-4.5 10-10 10H660.7l-141.6 141.6c-2 2-4.5 3-7.1 3zM173 851.1h194.4c2.7 0 5.2 1.1 7.1 2.9L512 991.6l137.5-137.5c1.9-1.9 4.4-2.9 7.1-2.9H851V656.7c0-2.7 1.1-5.2 2.9-7.1l137.5-137.5-137.5-137.5c-1.9-1.9-2.9-4.4-2.9-7.1V173.1H656.6c-2.7 0-5.2-1.1-7.1-2.9L512 32.7 374.5 170.2c-1.9 1.9-4.4 2.9-7.1 2.9H173v194.4c0 2.7-1.1 5.2-2.9 7.1L32.6 512.1l137.5 137.5c1.9 1.9 2.9 4.4 2.9 7.1v194.4z" fill="" /><path d="M512 512.1m-257.8 0a257.8 257.8 0 1 0 515.6 0 257.8 257.8 0 1 0-515.6 0Z" fill="#F7DDAD" /><path d="M512 779.9c-71.5 0-138.8-27.9-189.4-78.4-50.6-50.6-78.4-117.8-78.4-189.4s27.9-138.8 78.4-189.4c50.6-50.6 117.8-78.4 189.4-78.4 71.5 0 138.8 27.9 189.4 78.4 50.6 50.6 78.4 117.8 78.4 189.4S752 650.9 701.4 701.5 583.5 779.9 512 779.9z m0-515.6c-66.2 0-128.4 25.8-175.2 72.6-46.8 46.8-72.6 109-72.6 175.2s25.8 128.4 72.6 175.2c46.8 46.8 109 72.6 175.2 72.6 66.2 0 128.4-25.8 175.2-72.6 46.8-46.8 72.6-109 72.6-175.2S734 383.7 687.2 336.9c-46.8-46.8-109-72.6-175.2-72.6z" fill="" /></svg>
+        <div class="darkModeToggle">
+          <input type="checkbox" id="toggle-dark" />
+          <label for="toggle-dark" class="toggle-dark-mode">
+            <svg
+              width="800px"
+              class="sun"
+              height="800px"
+              viewBox="0 0 1024 1024"
+              class="icon"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M861 656.7l144.6-144.6L861 367.6V163.1H656.6L512 18.6 367.4 163.1H163v204.5L18.4 512.1 163 656.7v204.4h204.4L512 1005.7l144.6-144.6H861z"
+                fill="#FCD170"
+              />
+              <path
+                d="M512 1015.7c-2.6 0-5.1-1-7.1-2.9L363.3 871.1H163c-5.5 0-10-4.5-10-10V660.8L11.4 519.2c-1.9-1.9-2.9-4.4-2.9-7.1 0-2.7 1.1-5.2 2.9-7.1L153 363.4V163.1c0-5.5 4.5-10 10-10h200.3L504.9 11.5c1.9-1.9 4.4-2.9 7.1-2.9s5.2 1.1 7.1 2.9l141.6 141.6H861c5.5 0 10 4.5 10 10v200.3L1012.6 505c1.9 1.9 2.9 4.4 2.9 7.1 0 2.7-1.1 5.2-2.9 7.1L871 660.8v200.3c0 5.5-4.5 10-10 10H660.7l-141.6 141.6c-2 2-4.5 3-7.1 3zM173 851.1h194.4c2.7 0 5.2 1.1 7.1 2.9L512 991.6l137.5-137.5c1.9-1.9 4.4-2.9 7.1-2.9H851V656.7c0-2.7 1.1-5.2 2.9-7.1l137.5-137.5-137.5-137.5c-1.9-1.9-2.9-4.4-2.9-7.1V173.1H656.6c-2.7 0-5.2-1.1-7.1-2.9L512 32.7 374.5 170.2c-1.9 1.9-4.4 2.9-7.1 2.9H173v194.4c0 2.7-1.1 5.2-2.9 7.1L32.6 512.1l137.5 137.5c1.9 1.9 2.9 4.4 2.9 7.1v194.4z"
+                fill=""
+              />
+              <path
+                d="M512 512.1m-257.8 0a257.8 257.8 0 1 0 515.6 0 257.8 257.8 0 1 0-515.6 0Z"
+                fill="#F7DDAD"
+              />
+              <path
+                d="M512 779.9c-71.5 0-138.8-27.9-189.4-78.4-50.6-50.6-78.4-117.8-78.4-189.4s27.9-138.8 78.4-189.4c50.6-50.6 117.8-78.4 189.4-78.4 71.5 0 138.8 27.9 189.4 78.4 50.6 50.6 78.4 117.8 78.4 189.4S752 650.9 701.4 701.5 583.5 779.9 512 779.9z m0-515.6c-66.2 0-128.4 25.8-175.2 72.6-46.8 46.8-72.6 109-72.6 175.2s25.8 128.4 72.6 175.2c46.8 46.8 109 72.6 175.2 72.6 66.2 0 128.4-25.8 175.2-72.6 46.8-46.8 72.6-109 72.6-175.2S734 383.7 687.2 336.9c-46.8-46.8-109-72.6-175.2-72.6z"
+                fill=""
+              />
+            </svg>
 
-                    <svg width="800px" class="moon hide" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19.9001 2.30719C19.7392 1.8976 19.1616 1.8976 19.0007 2.30719L18.5703 3.40247C18.5212 3.52752 18.4226 3.62651 18.298 3.67583L17.2067 4.1078C16.7986 4.26934 16.7986 4.849 17.2067 5.01054L18.298 5.44252C18.4226 5.49184 18.5212 5.59082 18.5703 5.71587L19.0007 6.81115C19.1616 7.22074 19.7392 7.22074 19.9001 6.81116L20.3305 5.71587C20.3796 5.59082 20.4782 5.49184 20.6028 5.44252L21.6941 5.01054C22.1022 4.849 22.1022 4.26934 21.6941 4.1078L20.6028 3.67583C20.4782 3.62651 20.3796 3.52752 20.3305 3.40247L19.9001 2.30719Z" fill="#FFFFFF"/>
-                        <path d="M16.0328 8.12967C15.8718 7.72009 15.2943 7.72009 15.1333 8.12967L14.9764 8.52902C14.9273 8.65407 14.8287 8.75305 14.7041 8.80237L14.3062 8.95987C13.8981 9.12141 13.8981 9.70107 14.3062 9.86261L14.7041 10.0201C14.8287 10.0694 14.9273 10.1684 14.9764 10.2935L15.1333 10.6928C15.2943 11.1024 15.8718 11.1024 16.0328 10.6928L16.1897 10.2935C16.2388 10.1684 16.3374 10.0694 16.462 10.0201L16.8599 9.86261C17.268 9.70107 17.268 9.12141 16.8599 8.95987L16.462 8.80237C16.3374 8.75305 16.2388 8.65407 16.1897 8.52902L16.0328 8.12967Z" fill="#FFFFFF"/>
-                        <path opacity="1" d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#FFFFFF"/>
-                        </svg>
-                </label>
-            </div>
-        </nav>
+            <svg
+              width="800px"
+              class="moon hide"
+              height="800px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.9001 2.30719C19.7392 1.8976 19.1616 1.8976 19.0007 2.30719L18.5703 3.40247C18.5212 3.52752 18.4226 3.62651 18.298 3.67583L17.2067 4.1078C16.7986 4.26934 16.7986 4.849 17.2067 5.01054L18.298 5.44252C18.4226 5.49184 18.5212 5.59082 18.5703 5.71587L19.0007 6.81115C19.1616 7.22074 19.7392 7.22074 19.9001 6.81116L20.3305 5.71587C20.3796 5.59082 20.4782 5.49184 20.6028 5.44252L21.6941 5.01054C22.1022 4.849 22.1022 4.26934 21.6941 4.1078L20.6028 3.67583C20.4782 3.62651 20.3796 3.52752 20.3305 3.40247L19.9001 2.30719Z"
+                fill="#FFFFFF"
+              />
+              <path
+                d="M16.0328 8.12967C15.8718 7.72009 15.2943 7.72009 15.1333 8.12967L14.9764 8.52902C14.9273 8.65407 14.8287 8.75305 14.7041 8.80237L14.3062 8.95987C13.8981 9.12141 13.8981 9.70107 14.3062 9.86261L14.7041 10.0201C14.8287 10.0694 14.9273 10.1684 14.9764 10.2935L15.1333 10.6928C15.2943 11.1024 15.8718 11.1024 16.0328 10.6928L16.1897 10.2935C16.2388 10.1684 16.3374 10.0694 16.462 10.0201L16.8599 9.86261C17.268 9.70107 17.268 9.12141 16.8599 8.95987L16.462 8.80237C16.3374 8.75305 16.2388 8.65407 16.1897 8.52902L16.0328 8.12967Z"
+                fill="#FFFFFF"
+              />
+              <path
+                opacity="1"
+                d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                fill="#FFFFFF"
+              />
+            </svg>
+          </label>
+        </div>
+      </nav>
     </header>
     <!-- end of header side -->
 
     <!-- hamburger menu side -->
     <div class="floating-hamburger-btn">
-        <input type="checkbox" id="checkHamburger" name="hamburgerCheckbox">
-        <label for="checkHamburger" class="hamburgerBtn" id="floating-hamburger">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </label>
+      <input type="checkbox" id="checkHamburger" name="hamburgerCheckbox" />
+      <label for="checkHamburger" class="hamburgerBtn" id="floating-hamburger">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </label>
     </div>
     <!-- end of hamburger menu side -->
 
     <!-- contents side -->
     <div class="ganjil-section">
-        <div class="opening-text">
-            <div class="title">
-                <h2>
-                    My Github Repositories
-                    <div class="github-logo-container">
-                        <svg viewBox="0 0 128 128" width="50px" height="50px" class="github-logo" style="display: inline;">
-                            <title>My GitHub Profile</title>
-                            <g fill="var(--github-logo-color)"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g>
-                        </svg>
-                    </div>
-                </h2>
+      <div class="opening-text">
+        <div class="title">
+          <h2>
+            My Github Repositories
+            <div class="github-logo-container">
+              <svg
+                viewBox="0 0 128 128"
+                width="50px"
+                height="50px"
+                class="github-logo"
+                style="display: inline"
+              >
+                <title>My GitHub Profile</title>
+                <g fill="var(--github-logo-color)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
+                  ></path>
+                  <path
+                    d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"
+                  ></path>
+                </g>
+              </svg>
             </div>
-
-            <div class="description">
-                <p>
-                    Here you can see most of the repositories from my github page. You can see or learn more by click in one of those.
-                </p>
-            </div>
-
-            <div class="searchBar">
-                <input type="search" class="search-text" id="search-text" placeholder="search repository">
-            </div>
+          </h2>
         </div>
 
-        <div class="cards-container" id="cards-container"></div>
+        <div class="description">
+          <p>
+            Here you can see most of the repositories from my github page. You
+            can see or learn more by click in one of those.
+          </p>
+        </div>
+
+        <div class="searchBar">
+          <input
+            type="search"
+            class="search-text"
+            id="search-text"
+            placeholder="search repository"
+          />
+        </div>
+      </div>
+
+      <div class="cards-container" id="cards-container"></div>
     </div>
 
     <!-- end of contents -->
@@ -105,11 +174,11 @@
 
     <!-- Main functional script things -->
     <script src="js/MainScript.js"></script>
-    <script src="js/github-script.js"></script>
+    <script src="js/github-script.js" type="module"></script>
     <script src="js/footer-generator.js"></script>
 
     <!-- UI things -->
     <script src="js/MainUIScript.js"></script>
-    <script src="js/githubPage-UIScript.js"></script>
-</body>
+    <script src="js/githubPage-UIScript.js" type="module"></script>
+  </body>
 </html>
