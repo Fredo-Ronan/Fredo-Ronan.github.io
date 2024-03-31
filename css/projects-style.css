@@ -40,7 +40,7 @@
 .cards-container .cards {
     position: relative;
     max-width: 600px;
-    /* height: 65rem; */
+    /* height: 75rem; */
     background-color: var(--section-genap-color);
     padding: 30px;
     padding-bottom: 4rem;
