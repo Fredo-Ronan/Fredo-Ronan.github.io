@@ -3,6 +3,10 @@
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("show", entry.isIntersecting)
+
+        if(entry.intersectionRatio > 0){
+            observer.unobserve(entry.target)
+        }
     })
 }, {
     threshold: 0

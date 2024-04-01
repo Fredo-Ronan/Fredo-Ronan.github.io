@@ -3,6 +3,10 @@
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("show", entry.isIntersecting)
+
+        if(entry.intersectionRatio > 0){
+            observer.unobserve(entry.target)
+        }
     })
 });
 
@@ -16,8 +20,6 @@ const observerTechLogos = new IntersectionObserver(entries => {
     entries.forEach((entry) => {
         if(entry.isIntersecting){
             entry.target.classList.add('slideIn');
-        } else {
-            entry.target.classList.remove('slideIn');
         }
     })
 });

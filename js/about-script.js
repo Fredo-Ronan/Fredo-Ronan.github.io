@@ -4,6 +4,10 @@
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("show", entry.isIntersecting)
+
+        if(entry.intersectionRatio > 0){
+            observer.unobserve(entry.target)
+        }
     })
 });
 
@@ -13,6 +17,8 @@ let hoverPrompt = document.querySelectorAll('.hover-prompt');
 let logos = document.querySelectorAll('.tech-logos');
 let category = document.querySelectorAll('.category');
 let sectionDescription = document.querySelectorAll('.section-description');
+
+console.log(skillTitle);
 
 skillTitle.forEach(element => observer.observe(element));
 hoverPrompt.forEach(element => observer.observe(element));
