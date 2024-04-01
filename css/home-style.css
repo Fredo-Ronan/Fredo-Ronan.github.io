@@ -78,11 +78,13 @@
     border: 7px solid var(--profile-picture-border-color);
     box-shadow: 12px 14px 32px 4px rgba(0, 0, 0, 0.252);
     object-fit: cover;
-    transform: translateX(-100%);
+    transform: translateX(-50%);
+    opacity: 0;
 }
 
 .introduce img.show {
     transform: translateX(0);
+    opacity: 1;
 }
 
 .introduce h3 {
@@ -96,11 +98,13 @@
 
 .introduceText {
     max-width: 719px;
-    transform: translateX(100%);
+    transform: translateX(50%);
+    opacity: 0;
 }
 
 .introduceText.show {
     transform: translateX(0);
+    opacity: 1;
 }
 
 .link-sosmed {
@@ -137,7 +141,8 @@
     font-size: 2rem;
     display: flex;
     justify-content: center;
-    transform: translateX(-100%);
+    transform: translateY(50%);
+    opacity: 0;
 }
 
 .tech-stack-section .hover-prompt {
@@ -151,7 +156,8 @@
 }
 
 .tech-stack-section .title.show {
-    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .tech-stack-section .hover-prompt.show {
@@ -232,11 +238,13 @@
     font-size: 2rem;
     display: flex;
     justify-content: center;
-    transform: translateX(-100%);
+    transform: translateY(50%);
+    opacity: 0;
 }
 
 .projects-section .title.show {
-    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .projects-container {
@@ -257,22 +265,26 @@
     color: var(--main-text-color);
     font-family: var(--introduce-font);
     max-width: 40vw;
-    transform: translateX(-100%);
+    transform: translateX(-50%);
+    opacity: 0;
 }
 
 .projects-container .project-description.right {
     color: var(--main-text-color);
     font-family: var(--introduce-font);
     max-width: 40vw;
-    transform: translateX(100%);
+    transform: translateX(50%);
+    opacity: 0;
 }
 
 .projects-container .project-description.show {
     transform: translateX(0);
+    opacity: 1;
 }
 
 .projects-container .project-description.right.show {
     transform: translateX(0);
+    opacity: 1;
 }
 
 .project-description h3 {
@@ -285,19 +297,23 @@
 }
 
 .projects-container .demo-images-wrapper {
-    transform: translateX(100%);
+    transform: translateX(50%);
+    opacity: 0;
 }
 
 .projects-container .demo-images-wrapper.left {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
+    opacity: 0;
 }
 
 .projects-container .demo-images-wrapper.show {
     transform: translateX(0);
+    opacity: 1;
 }
 
 .projects-container .demo-images-wrapper.left.show {
     transform: translateX(0);
+    opacity: 1;
 }
 
 .projects-container .demo-images-wrapper img {

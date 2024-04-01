@@ -21,11 +21,13 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: var(--main-text-color);
-    transform: translateX(-90%);
+    transform: translateY(50%);
+    opacity: 0;
 }
 
 .headline.show {
-    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .category {
