@@ -33,7 +33,7 @@ export const projects_data = [
             }
         ],
         picture: 'assets/live-chat-demo.png',
-        custom_width_picture: 'NULL'
+        custom_width_picture: '1'
     },
     {
         project_name: "Instagram Downloader",
@@ -67,7 +67,7 @@ export const projects_data = [
             }
         ],
         picture: "assets/ig_downloader_demo.png",
-        custom_width_picture: "NULL"
+        custom_width_picture: "1"
     },
     {
         project_name: "Snake Game in C",
@@ -106,6 +106,6 @@ export const projects_data = [
             }
         ],
         picture: "https://user-images.githubusercontent.com/128687596/230856656-8397bdf4-502c-4c4e-92d4-87ffca699512.gif",
-        custom_width_picture: '1.4'
+        custom_width_picture: '0.9'
     }
 ]

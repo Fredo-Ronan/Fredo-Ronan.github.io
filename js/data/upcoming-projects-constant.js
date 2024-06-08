@@ -101,6 +101,6 @@ export const upcoming_projects = [
             }
         ],
         picture: "assets/fredo_downloader_demo.png",
-        custom_width_picture: "NULL"
+        custom_width_picture: "1"
     }
 ]

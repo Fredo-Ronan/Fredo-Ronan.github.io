@@ -1,6 +1,15 @@
 
 /* HANDLE THE RESPONSIVE OF THE PROJECT PAGE STYLING */
 @media screen and (max-width: 576px) {
+    .cards-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .cards-container .cards {
+        flex-direction: column;
+    }
+
     .opening-text .title {
         font-size: 20px;
         text-align: center;

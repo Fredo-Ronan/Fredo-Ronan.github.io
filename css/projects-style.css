@@ -31,15 +31,14 @@
     align-items: center;
     gap: 3rem;
     flex-wrap: wrap;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
     padding-bottom: 5rem;
     color: var(--main-text-color);
 }
 
 .cards-container .cards {
     position: relative;
-    max-width: 600px;
     /* height: 75rem; */
     background-color: var(--section-genap-color);
     padding: 30px;
@@ -48,6 +47,7 @@
     box-shadow: 4px 6px 15px 3px rgba(0,0,0,0.1);
     transform: translateY(50px);
     opacity: 0;
+    display: flex;
 }
 
 .cards-container .cards.show {
