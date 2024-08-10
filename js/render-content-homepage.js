@@ -102,7 +102,7 @@ projectsSection.innerHTML = `
                     </p>
 
                     <div class="read-more-btn-wrapper" style="padding-top: 1rem;">
-                        <a href="/404.html" class="read-more-btn-link" style="padding-left: 8px;">
+                        <a href="https://github.com/Fredo-Ronan/Live-Chat-Web" class="read-more-btn-link" style="padding-left: 8px;">
                             Learn More&nbsp;&nbsp;&nbsp;↗
                         </a>
                     </div>
@@ -121,8 +121,8 @@ introduceSide.innerHTML = `
                 <div class="introduceText">
                     <h3>Fredo Ronan</h3>
                     <p>
-                        An informatics Engineering Student at Atma Jaya Yogyakarta University currently on 2nd year.
-                        I love making responsive website, software, hacking, and apps to solve people problems.<br><br>
+                        An informatics Engineering Student that passionate about creating a full stack web application and API service for other software 
+                        with strong interest also at Cyber Security and Artificial Intelligence fields to solve people problems.<br><br>
                         I'm a life long learner.<br><br>
                     </p>
     
