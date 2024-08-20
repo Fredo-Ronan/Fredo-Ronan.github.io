@@ -32,6 +32,10 @@ export const currentLearningFrameworkOrLibrary = [
         logoCode: "Nest JS"
     },
     {
+        name: "Sequelize",
+        logoCode: "Sequelize"
+    },
+    {
         name: "Unity",
         logoCode: "Unity"
     },
