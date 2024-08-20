@@ -31,6 +31,10 @@ export const programmingLanguages = [
         logoCode: "Javascript"
     },
     {
+        name: "Typescript",
+        logoCode: "Typescript"
+    },
+    {
         name: "Bash Script",
         logoCode: "Bash"
     },
@@ -81,6 +85,10 @@ export const frameworksOrLibrary = [
     {
         name: "React JS",
         logoCode: "React JS"
+    },
+    {
+        name: "Next JS",
+        logoCode: "Next JS"
     },
 ];
 

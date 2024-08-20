@@ -11,10 +11,6 @@ export const currentLearningProgrammingLanguages = [
         logoCode: "Kotlin|for about"
     },
     {
-        name: "Typescript",
-        logoCode: "Typescript"
-    },
-    {
         name: "C#",
         logoCode: "C#"
     },
@@ -32,8 +28,8 @@ export const currentLearningFrameworkOrLibrary = [
         logoCode: "Tailwind CSS"
     },
     {
-        name: "Next JS",
-        logoCode: "Next JS"
+        name: "Nest JS",
+        logoCode: "Nest JS"
     },
     {
         name: "Unity",
