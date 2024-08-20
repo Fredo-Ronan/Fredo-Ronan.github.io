@@ -18,7 +18,7 @@ let logos = document.querySelectorAll('.tech-logos');
 let category = document.querySelectorAll('.category');
 let sectionDescription = document.querySelectorAll('.section-description');
 
-console.log(skillTitle);
+// console.log(skillTitle);
 
 skillTitle.forEach(element => observer.observe(element));
 hoverPrompt.forEach(element => observer.observe(element));
