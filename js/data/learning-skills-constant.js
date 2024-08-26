@@ -36,6 +36,10 @@ export const currentLearningFrameworkOrLibrary = [
         logoCode: "Sequelize"
     },
     {
+        name: "TypeORM",
+        logoCode: "TypeORM"
+    },
+    {
         name: "Unity",
         logoCode: "Unity"
     },
