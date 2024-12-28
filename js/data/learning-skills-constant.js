@@ -47,4 +47,8 @@ export const currentLearningFrameworkOrLibrary = [
         name: "Flet",
         logoCode: "Flet"
     },
+    {
+        name: "Prisma",
+        logoCode: "Prisma"
+    }
 ];

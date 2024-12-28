@@ -72,6 +72,7 @@ body {
     --next-js-logo-color: black;
     --kotlin-logo-color: black;
     --unity-logo-color: black;
+    --prisma-logo-color: #2d3748;
 }
 
 body.dark {
@@ -123,6 +124,7 @@ body.dark {
     --next-js-logo-color: rgb(255, 255, 255);
     --kotlin-logo-color: white;
     --unity-logo-color: white;
+    --prisma-logo-color: white;
 }
 
 /* header side */
