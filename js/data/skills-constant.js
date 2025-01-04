@@ -90,6 +90,14 @@ export const frameworksOrLibrary = [
         name: "Next JS",
         logoCode: "Next JS"
     },
+    {
+        name: "Nest JS",
+        logoCode: "Nest JS"
+    },
+    {
+        name: "Tailwind",
+        logoCode: "Tailwind CSS"
+    },
 ];
 
 

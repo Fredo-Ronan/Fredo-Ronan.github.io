@@ -24,14 +24,6 @@ export const currentLearningFrameworkOrLibrary = [
         logoCode: "Bootstrap"
     },
     {
-        name: "Tailwind",
-        logoCode: "Tailwind CSS"
-    },
-    {
-        name: "Nest JS",
-        logoCode: "Nest JS"
-    },
-    {
         name: "Sequelize",
         logoCode: "Sequelize"
     },
