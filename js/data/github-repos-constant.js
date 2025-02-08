@@ -20,6 +20,18 @@ export const github_repos = [
         support_os: "Windows, Linux, MacOS"
     },
     {
+        github_repo_title: "CMS Template Next JS + ChakraUI",
+        technologies: [
+            'Next JS',
+            'Node JS',
+            'Typescript',
+        ],
+        state: 'Under Development',
+        github_repo_description: "A content management system template built using Next JS + ChakraUI frameworks.",
+        github_repo_link: "https://github.com/Fredo-Ronan/cms_chakraui_template",
+        support_os: "Windows, Linux, MacOS"
+    },
+    {
         github_repo_title: "Snake Game in C",
         technologies: [
             'C'
